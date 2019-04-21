@@ -1,0 +1,1 @@
+# xtrmaddons-joomla-mod-example
