@@ -21,6 +21,8 @@
 
 	<!-- Main File Copy -->
 	<files>
+		<folder>Helper</folder>
+		<folder>tmpl</folder>
 		<filename module="mod_xtrmexample">mod_xtrmexample.php</filename>
 		<filename>mod_xtrmexample.xml</filename>
 	</files>
@@ -43,13 +45,12 @@
 	<!-- Configuration of the module -->
 	<config>
 		<!-- Basic parameters of the module -->
-		<fieldset name="params">
+		<fields name="params">
 			<fieldset name="basic">
 			</fieldset>
-		</fields>
 		
-		<!-- Advanced parameters of the module -->
-		<fieldset name="advanced">
+			<!-- Advanced parameters of the module -->
+			<fieldset name="advanced">
 				<field
 					name="tag_id"
 					type="text"
@@ -110,6 +111,7 @@
 					<option value="itemid"></option>
 				</field>
 			</fieldset>
+		</fields>
 	</config>
 	
   <!-- Extension Update Specification -->
