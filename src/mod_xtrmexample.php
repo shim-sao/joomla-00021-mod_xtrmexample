@@ -23,6 +23,9 @@ use Joomla\CMS\Helper\ModuleHelper;
 // Declare Module Helper
 use Joomla\Module\XtrmExample\Site\Helper\XtrmExampleHelper;
 
+// Include the helper functions only once
+require_once "Helper/XtrmExampleHelper.php";
+
 
 
 // Get message from module helper class.
@@ -30,7 +33,7 @@ $message = XtrmExampleHelper::getMessage($params);
 
 // Get module html class suffix.
 $classSfx = htmlspecialchars($params->get('class_sfx'), ENT_COMPAT, 'UTF-8');
-
+$tagId    = htmlspecialchars($params->get('tag_id', ''), ENT_COMPAT, 'UTF-8');
 
 
 // Display module layout.
