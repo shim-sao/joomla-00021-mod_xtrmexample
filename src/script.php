@@ -57,7 +57,7 @@ class Mod_XtrmExampleInstallerScript
 	 */
 	public function install($parent)
 	{
-		echo '<p>' . JText::_('mod_xtrmexample_INSTALL_SUCCESS') . '</p>';
+		echo '<p>' . JText::_('MOD_XTRMEXAMPLE_INSTALL_SUCCESS') . '</p>';
 	}
 
 	/**
@@ -73,7 +73,7 @@ class Mod_XtrmExampleInstallerScript
 	 */
 	public function uninstall($parent)
 	{
-		echo '<p>' . JText::_('mod_xtrmexample_UNINSTALL_SUCCESS') . '</p>';
+		echo '<p>' . JText::_('MOD_XTRMEXAMPLE_UNINSTALL_SUCCESS') . '</p>';
 	}
 
 	/**
@@ -90,7 +90,7 @@ class Mod_XtrmExampleInstallerScript
 	public function update($parent)
 	{
 		$this->cleanUpdatesSites();
-		echo '<p>' . JText::sprintf('mod_xtrmexample_UPDATE_SUCCESS', $parent->get('manifest')->version) . '</p>';
+		echo '<p>' . JText::sprintf('MOD_XTRMEXAMPLE_UPDATE_SUCCESS', $parent->get('manifest')->version) . '</p>';
 	}
 
 	/**
