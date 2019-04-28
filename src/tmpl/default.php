@@ -1,6 +1,6 @@
 <?php
 /**
- * default.php, build date : 26 apr. 2019
+ * default.php, build date : 28 apr. 2019
  * Default template file of the Joomla Module XtrmAddons Example.
  * php version 7.2.10
  *
@@ -23,14 +23,12 @@ use Joomla\CMS\HTML\HTMLHelper;
 // Declare Module namespaces
 use Joomla\CMS\Helper\ModuleHelper;
 
+// Add default module javascript.
 HTMLHelper::_('script', 'mod_xtrmexample/default.min.js', array('version' => 'auto', 'relative' => true));
 
-$id = '';
-
-// The menu class is deprecated. Use mod-menu instead
 ?>
-<div?php echo $id; ?> class="mod-xtrmexample<?php echo $classSfx ? '-' . $classSfx : ''; ?>">
-<
+<div <?php echo $tagId ? 'id="' . $tagId . '"' : ''; ?>class="mod-xtrmexample mod-<?php echo $classSfx ? '-' . $classSfx : ''; ?>">
+<?php
 	echo $message;
 ?>
 </div>
