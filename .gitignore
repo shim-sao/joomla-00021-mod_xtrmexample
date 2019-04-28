@@ -6,3 +6,4 @@
 # Project
 /.build/*
 /dist/*
+/src/src.zip
