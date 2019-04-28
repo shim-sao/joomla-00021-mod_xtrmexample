@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="4.0" client="site" method="upgrade">
 	<name>mod_xtrmexample</name>
-	<creationDate>2019-04-26</creationDate>
+	<creationDate>2019-04-28</creationDate>
 	<author>XtrmAddons.COM</author>
 	<authorEmail>contact@xtrmaddons.com</authorEmail>
 	<authorUrl>http://www.xtrmaddons.com</authorUrl>
 	<copyright>Copyright 2015-2019 XtrmAddons.com. All rights reserved.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<version>4.0.01.190426</version>
+	<version>4.0.01.190428</version>
 	<description>MOD_XTRMEXAMPLE_XML_DESCRIPTION</description>
 
 	<!-- Set module namespace -->

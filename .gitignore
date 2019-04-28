@@ -5,5 +5,9 @@
 
 # Project
 /.build/*
+/_includes/*
+/_layouts/*
 /dist/*
+/docs/*
+/download/*
 /src/src.zip
