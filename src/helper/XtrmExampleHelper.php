@@ -13,7 +13,7 @@
  * @license    http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL, see LICENSE.php
  * @link       http://www.xtrmaddons.com/
  */
-namespace Joomla\Module\XtrmExample\Site\XtrmExampleHelper;
+namespace Joomla\Module\XtrmExample\Site\Helper;
 
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die();
