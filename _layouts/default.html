@@ -5,6 +5,10 @@
   </head>
 
   <body>
+    {% if site.preloader %}
+    {% include common/preloader.html %}
+    {% endif %}
+      
     <header id="content-header">
       {% include common/navbar.html %}
     </header>
