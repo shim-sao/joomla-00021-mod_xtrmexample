@@ -1,3 +1,6 @@
+# Visual Code Projects
+.vscode/*
+
 # Eclipse projects
 /.settings/*
 /.buildpath
