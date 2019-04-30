@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: 'en-US' }}">
-  <head>
-    {% include common/header.html %}
-  </head>
+  <head></head>
 
-  <body>
+  <body style="background-color:#F2F2F2">
     <section id="content-section" class="container-fluid">
-      <div id="content-layer" class="container">
+      <div id="content-layer">
         {{ content }}
-
-        <hr class="clearfix" />
-
-        {% if page.comments %}
-        {% include extra/disqus.html %}
-        {% endif %}
       </div>
     </section>
-    {% if page.comments %}
-    <script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
-    {% endif %}
   </body>
 </html>
