@@ -1,4 +1,8 @@
+# Vidual Code projects
+/.vscode/*
+
 # Eclipse projects
 /.settings/*
 /.buildpath
 /.project
+/src/*.zip
