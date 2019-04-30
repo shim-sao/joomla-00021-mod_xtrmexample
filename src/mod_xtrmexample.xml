@@ -5,7 +5,7 @@
 	<author>XtrmAddons.COM</author>
 	<authorEmail>contact@xtrmaddons.com</authorEmail>
 	<authorUrl>http://www.xtrmaddons.com</authorUrl>
-	<copyright>Copyright 2015-2019 XtrmAddons.com. All rights reserved.</copyright>
+	<copyright>Copyright 2019-2019 XtrmAddons.com. All rights reserved.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<version>4.0.01.190428</version>
 	<description>MOD_XTRMEXAMPLE_XML_DESCRIPTION</description>
@@ -54,20 +54,15 @@
 				<field
 					name="tag_id"
 					type="text"
-					label="MOD_MENU_FIELD_TAG_ID_LABEL"
+					description="MOD_XTRMEXAMPLE_FIELD_TAG_ID_DESC"
+					label="MOD_XTRMEXAMPLE_FIELD_TAG_ID_LABEL"
 				/>
 
 				<field
 					name="class_sfx"
 					type="text"
-					label="MOD_MENU_FIELD_CLASS_LABEL"
-				/>
-
-				<field
-					name="window_open"
-					type="text"
-					label="MOD_MENU_FIELD_TARGET_LABEL"
-					description="MOD_MENU_FIELD_TARGET_DESC"
+					description="MOD_XTRMEXAMPLE_FIELD_CLASS_DESC"
+					label="MOD_XTRMEXAMPLE_FIELD_CLASS_LABEL"
 				/>
 
 				<field
