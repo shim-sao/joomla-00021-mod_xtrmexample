@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: 'en-US' }}">
-  <head></head>
+  <head>
+      <script src="{{ site.assets.css }}{{ 'bootstrap.flatly.css?v=' | append: site.github.build_revision | relative_url }}"></script>
+  </head>
 
   <body style="background-color:#F2F2F2">
     <section id="content-section" class="container-fluid">
