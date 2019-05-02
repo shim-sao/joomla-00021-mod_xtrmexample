@@ -26,8 +26,6 @@ use Joomla\Module\XtrmExample\Site\Helper\XtrmExampleHelper;
 // Include the helper functions only once
 require_once "Helper/XtrmExampleHelper.php";
 
-
-
 // Get message from module helper class.
 $message = XtrmExampleHelper::getMessage($params);
 
