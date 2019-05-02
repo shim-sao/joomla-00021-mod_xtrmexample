@@ -1,0 +1,52 @@
+{
+  "author": {
+	  "name": "shim-sao",
+	  "email": "contact@xtrmaddons.com",
+    "url": "https://github.com/shim-sao/"
+  },
+  "client_id": "site",
+  "code": "00021",
+  "copyright": "Copyright 2019-2019 XtrmAddons.com. All rights reserved.",
+  "description": "XtrmAddons Joomla Module Example.",
+  "download": {
+    "stable": "",
+    "dev": ""
+  },
+  "element": "mod_xtrmexample",
+  "extension": "mod_xtrmexample",
+  "folder": "modules",
+  "install": "",
+  "license_link": "http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL",
+  "manifest": "mod_xtrmexample.xml",
+  "name": "Module Xtrm Example",
+  "packager": {
+    "name": "xtrmaddons.com",
+    "url": "http://www.xtrmaddons.com/"
+  },
+  "platform": "^(3\\.)",
+  "plugin_folder": "",
+  "type": "module",
+  "versions": {
+    "joomla": "3",
+    "joomla_min": "8",
+    "current": "01",
+    "min": "00"
+  },
+  "files": [
+    "Helper/XtrmExampleHelper.php",
+    "language/en-GB/en-GB.mod_xtrmexample.ini",
+    "language/en-GB/en-GB.mod_xtrmexample.sys.ini",
+    "language/fr-FR/fr-FR.mod_xtrmexample.ini",
+    "language/fr-FR/fr-FR.mod_xtrmexample.sys.ini",
+    "media/css/default.css",
+    "media/js/default.js",
+    "media/js/default.min.js",
+    "tmpl/default.php",
+    "mod_xtrmexample.php",
+    "mod_xtrmexample.xml",
+    "script.php"
+  ],
+  "files_core": [
+    "media/image/logo.png"
+  ]
+}
