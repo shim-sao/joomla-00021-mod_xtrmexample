@@ -10,7 +10,7 @@
 /.build/*
 /_includes/*
 /_layouts/*
-/dist/*
+# /dist/*
 /docs/*
 /download/*
 /src/src.zip
