@@ -38,7 +38,7 @@
     "joomla": "4",
     "joomla_min": "0",
     "current": "01",
-    "min": "00"
+    "min": "02"
   },
   "files": [
     "Helper/XtrmExampleHelper.php",
