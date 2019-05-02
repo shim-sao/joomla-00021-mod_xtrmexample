@@ -38,7 +38,7 @@ use Joomla\CMS\Router\Route;
  * @link       	{{packager_url}}
  *
  * @access		 	public
- * @since 			4.0.00.01.190426 - 26 apr. 2019
+ * @since 			4.0.00.01.190426
  */
 class XtrmExampleHelper
 {
@@ -48,7 +48,7 @@ class XtrmExampleHelper
 	 * @param   \Joomla\Registry\Registry $params The module options.
 	 *
 	 * @access 	public
-	 * @since 	4.0.00.01.190426 - 26 apr. 2019
+	 * @since 	4.0.00.01.190426
 	 * @version {{version_build}}
 	 *
 	 * @return  string
