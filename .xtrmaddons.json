@@ -1,34 +1,42 @@
 {
+  "builder_version": "0.3",
   "author": {
 	  "name": "shim-sao",
 	  "email": "contact@xtrmaddons.com",
     "url": "https://github.com/shim-sao/"
   },
+  "category": "XtrmAddons",
   "client_id": "site",
   "code": "00021",
   "copyright": "Copyright 2019-2019 XtrmAddons.com. All rights reserved.",
   "description": "XtrmAddons Joomla Module Example.",
   "download": {
-    "stable": "",
-    "dev": ""
+    "debug": "https://github.joomla.mod_xtrmexample.xtrmaddons.com/download/debug",
+    "release": "https://github.joomla.mod_xtrmexample.xtrmaddons.com/download/release"
+  },
+  "update_file": {
+    "debug": "update-4.0.xml",
+    "release": "update-4.0.xml"
   },
   "element": "mod_xtrmexample",
   "extension": "mod_xtrmexample",
   "folder": "modules",
+  "framework": "Joomla",
   "install": "",
-  "license_link": "http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL",
+  "license_link": "https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL",
   "manifest": "mod_xtrmexample.xml",
   "name": "Module Xtrm Example",
   "packager": {
     "name": "xtrmaddons.com",
-    "url": "http://www.xtrmaddons.com/"
+    "url": "https://www.xtrmaddons.com/",
+    "repo": "https://github.joomla.mod_xtrmexample.xtrmaddons.com"
   },
   "platform": "^(3\\.)",
   "plugin_folder": "",
   "type": "module",
   "versions": {
-    "joomla": "3",
-    "joomla_min": "8",
+    "joomla": "4",
+    "joomla_min": "0",
     "current": "01",
     "min": "00"
   },

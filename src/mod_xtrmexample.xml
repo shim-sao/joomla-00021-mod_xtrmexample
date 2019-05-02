@@ -1,13 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="4.0" client="site" method="upgrade">
-	<name>mod_xtrmexample</name>
-	<creationDate>2019-04-28</creationDate>
-	<author>XtrmAddons.COM</author>
-	<authorEmail>contact@xtrmaddons.com</authorEmail>
-	<authorUrl>http://www.xtrmaddons.com</authorUrl>
-	<copyright>Copyright 2019-2019 XtrmAddons.com. All rights reserved.</copyright>
-	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<version>4.0.01.190428</version>
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="{{type}}" version="{{version_joomla}}" method="upgrade">
+	<name>{{element}}</name>
+  <version>{{version_build}}</version>
+	<creationDate>{{creation_date}}</creationDate>
+	<author>{{author}}</author>
+	<authorName>{{author_name}}</authorName>
+	<authorEmail>{{author_email}}</authorEmail>
+	<authorUrl>{{author_url}}</authorUrl>
+	<packager>{{packager}}</packager>
+	<packagerurl>{{packager_url}}</packagerurl>
+  <copyright>{{copyright}}</copyright>
+  <license>{{license_link}}</license>
 	<description>MOD_XTRMEXAMPLE_XML_DESCRIPTION</description>
 
 	<!-- Set module namespace -->
@@ -111,6 +114,6 @@
 	
   <!-- Extension Update Specification -->
 	<updateservers>
-		<server name="XtrmAddons - Module Xtrm Example Update" priority="1" type="extension">[update_folder]</server>
+		<server name="XtrmAddons - Module Xtrm Example Update" priority="1" type="extension">{{update_folder}}</server>
 	</updateservers>
 </extension>

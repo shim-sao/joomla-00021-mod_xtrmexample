@@ -1,17 +1,17 @@
 <?php
 /**
- * mod_xtrmexample.php, build date : 25 apr. 2019
+ * mod_xtrmexample.php, build date : {{creation_date}}
  * Installation script of the Joomla Module XtrmAddons To Top.
  * php version 7.2.10
  *
- * @version    GIT: $Id$
- * @category   XtrmAddons
- * @package    Joomla
- * @subpackage mod_xtrmexample
- * @author     shim-sao <contact@xtrmaddons.com>
- * @copyright  2019-2019 XtrmAddons.COM
- * @license    http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL, see LICENSE.php
- * @link       http://www.xtrmaddons.com/
+ * @version    {{version_build}}
+ * @category   {{category}}
+ * @package    {{framework}}
+ * @subpackage {{element}}
+ * @author     {{author}} <{{author_email}}>
+ * @copyright  {{copyright}}
+ * @license    {{license_link}}
+ * @link       {{packager_url}}
  */
 
 // Check to ensure this file is included in Joomla!
