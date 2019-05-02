@@ -6,3 +6,7 @@
 /.buildpath
 /.project
 /src/*.zip
+
+# Project
+/dist/*
+/download/debug/*
