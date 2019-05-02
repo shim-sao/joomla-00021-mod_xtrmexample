@@ -32,7 +32,7 @@ defined('_JEXEC') or die;
  * @link       	{{packager_url}}
  *
  * @access     	public
- * @since 			4.0.00.01.190425 - 25 apr. 2019
+ * @since 			4.0.00.01.190425
  */
 class Mod_XtrmExampleInstallerScript
 {
@@ -49,7 +49,7 @@ class Mod_XtrmExampleInstallerScript
 	 * @param   object $parent The class that calling this method.
 	 *
 	 * @access	public
-	 * @since 	4.0.00.01.190425 - 25 apr. 2019
+	 * @since 	4.0.00.01.190425
 	 * @version {{version_build}}
 	 *
 	 * @return 	void
@@ -65,7 +65,7 @@ class Mod_XtrmExampleInstallerScript
 	 * @param	object	$parent	is the class calling this method.
 	 *
 	 * @access	public
-	 * @since 	4.0.00.01.190425 - 25 apr. 2019
+	 * @since 	4.0.00.01.190425
 	 * @version {{version_build}}
 	 *
 	 * @return void
@@ -81,7 +81,7 @@ class Mod_XtrmExampleInstallerScript
 	 * @param 	object $parent is the class calling this method.
 	 *
 	 * @access	public
-	 * @since 	4.0.00.01.190425 - 25 apr. 2019
+	 * @since 	4.0.00.01.190425
 	 * @version {{version_build}}
 	 *
 	 * @return 	void
@@ -99,7 +99,7 @@ class Mod_XtrmExampleInstallerScript
 	 * @param 	object	$parent	is the class calling this method
 	 *
 	 * @access	public
-	 * @since 	4.0.00.01.190425 - 25 apr. 2019
+	 * @since 	4.0.00.01.190425
 	 * @version {{version_build}}
 	 *
 	 * @return 	void
@@ -113,7 +113,7 @@ class Mod_XtrmExampleInstallerScript
 	 * Method to clean updates site liste.
 	 *
 	 * @access	public
-	 * @since 	4.0.00.01.190425 - 25 apr. 2019
+	 * @since 	4.0.00.01.190425
 	 * @version {{version_build}}
 	 *
 	 * @return 	void
