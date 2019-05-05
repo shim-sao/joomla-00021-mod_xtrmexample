@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="{{type}}" version="{{version_joomla}}" method="upgrade">
 	<name>{{element}}</name>
-  <version>{{version_build}}</version>
+	<version>{{version_build}}</version>
 	<creationDate>{{creation_date}}</creationDate>
 	<author>{{author}}</author>
 	<authorName>{{author_name}}</authorName>
@@ -9,8 +9,8 @@
 	<authorUrl>{{author_url}}</authorUrl>
 	<packager>{{packager}}</packager>
 	<packagerurl>{{packager_url}}</packagerurl>
-  <copyright>{{copyright}}</copyright>
-  <license>{{license_link}}</license>
+	<copyright>{{copyright}}</copyright>
+	<license>{{license_link}}</license>
 	<description>MOD_XTRMEXAMPLE_XML_DESCRIPTION</description>
 
 	<!-- Set module namespace -->
@@ -111,8 +111,8 @@
 			</fieldset>
 		</fields>
 	</config>
-	
-  <!-- Extension Update Specification -->
+
+	<!-- Extension Update Specification -->
 	<updateservers>
 		<server name="XtrmAddons - Module Xtrm Example Update" priority="1" type="extension">{{update_folder}}</server>
 	</updateservers>
