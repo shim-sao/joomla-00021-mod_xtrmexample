@@ -1,6 +1,6 @@
 ---
 id: UMjid0lSalktob5m
-permalink: /index.md
+permalink: /index/
 lang: en-US
 layout: content_only
 title: XtrmAddons | Joomla Module Example
