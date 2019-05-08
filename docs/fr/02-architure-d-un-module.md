@@ -15,12 +15,11 @@ comments: true
         à son fonctionnement ainsi que d'une normalisation ou convention pour les nommages 
         afin de les rendre fonctionnels.
       </p>
-      <pre>
-        <code>
-          nomDuModule.xml
-          nomDuModule.php
-          script.php
-        </code>
-      </pre>
+      
+```shell
+nomDuModule.xml
+nomDuModule.php
+script.php
+```
   </div>
 </div>
