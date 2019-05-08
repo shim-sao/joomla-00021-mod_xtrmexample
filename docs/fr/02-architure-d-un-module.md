@@ -15,10 +15,14 @@ comments: true
         à son fonctionnement ainsi que d'une normalisation ou convention pour les nommages 
         afin de les rendre fonctionnels.
       </p>
-      <code>
+      <pre>
         nomDuModule.xml
         nomDuModule.php
         script.php
-      </code>
+      </pre>
   </div>
 </div>
+
+```php
+echo "toto"
+```
