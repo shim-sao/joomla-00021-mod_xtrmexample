@@ -15,11 +15,9 @@ comments: true
         à son fonctionnement ainsi que d'une normalisation ou convention pour les nommages 
         afin de les rendre fonctionnels.
       </p>
-      <pre>
-        nomDuModule.xml
-        nomDuModule.php
-        script.php
-      </pre>
+      <a target="_blank" href="/assets/images/module-xtrmexample-files-01.jpg" class="screenshot-link">
+      <img class="screenshot-full" src="/assets/images/module-xtrmexample-files-01.jpg" alt="Dossier minimal d'un module" />
+    </a>
   </div>
 </div>
 
