@@ -47,8 +47,7 @@ defined('_JEXEC') or die;
 	Nous allons donc définir la class suivante:<br />
 </p>
 
-<pre class="highlight">
-<code>
+```php
 class Mod_XtrmExampleInstallerScript
 {
   // Déclarer ici les méthodes d'événements.
@@ -60,8 +59,7 @@ class Mod_XtrmExampleInstallerScript
 
 ### Déclaration les méthodes d'événements.
 
-<pre class="highlight">
-<code>
+```php
 	/**
 	 * The full name of the module.
 	 *
