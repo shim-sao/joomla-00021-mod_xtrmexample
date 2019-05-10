@@ -15,7 +15,6 @@ Il permet de gérer et de personnaliser les différents événements qui peuvent
 
 Comme événements, nous pouvons citer: installation, désinstallation, mise à jour et "post flight" qui est appelée en fin d'execution quel que soit le mode utilisé.
 
-
 ```php
 <?php
 /**
