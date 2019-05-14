@@ -13,16 +13,13 @@ downloads:
   size: 16,2 Ko
 ---
 
-<div class="main-content d-flex">
+<article class="main-content d-flex">
   <div class="p-2 flex-grow-1">       
     <h2>Introduction</h2>
 
     <p class="justify">
-      Le Module présenté ici est un simple exemple de création d'un module pour Joomla. Il se compose pour la partie 
-      du site de l'affichage d'un message basique de bienvenue et pour la partie d'administration des paramètres de base 
-      servant à la configuration du module.<br />
-      Nous allons voir par la suite en détail de quoi se compose le module ainsi que les différentes possibilités qu'offre 
-      le développement d'un module pour Joomla adapté à ses besoins.
+      Le Module présenté ici est un simple exemple de création d'un module pour Joomla. Il se compose, pour la <a href="#scrfront">partie du site</a>, de l'affichage d'un message basique de bienvenue, et pour la <a href="#scrback">partie d'administration<a>, des paramètres de base servants à la configuration du module.<br />
+      Nous allons voir par la suite en détail de quoi se compose le module ainsi que les différentes possibilités qu'offre le développement d'un module pour Joomla adapté à ses besoins.
     </p>
 
     <h2>Présentation</h2>
@@ -30,25 +27,33 @@ downloads:
     <p class="justify">
       Tout d'abord, qu'est-ce-qu'un Module pour Joomla ?<br />
       Un module pour Joomla est une extension composées de fichiers dans Joomla qui permettent
-       d'afficher des éléments préconfigurés dans les positions prédéfinies du template que l'on souhaite.<br />
+       d'afficher des éléments préconfigurés dans les positions prédéfinies que l'on souhaite à l'intérieur du template.<br />
        Comme exemple de module nous pouvons citer: le formulaire de connexion, la liste des articles les plus visités...<br />
-       Les modules se trouve dans le répertoire <code>/modules</code> de Joomla.
+       Tous les modules se trouvent dans le répertoire <code><span class="nc">/modules</span>></code> de Joomla.
     </p> 
 
-    <a target="_blank" href="/assets/images/module-xtrmexample-frontend.jpg" class="screenshot-link">
-      <img class="screenshot-full" src="/assets/images/module-xtrmexample-frontend.jpg" alt="Module Xtrm Example Frontend" />
-    </a>
+    <figure>
+      <a target="_blank" href="/assets/images/module-xtrmexample-frontend.jpg" class="screenshot-link">
+        <img id="scrfront" class="screenshot-full" src="/assets/images/module-xtrmexample-frontend.jpg" alt="Module Xtrm Example Frontend" />
+      </a>
+      <figcaption class="justify">
+        Voici ce à quoi devrait ressembler le module sur la partie d'affichage du site.
+      </figcaption>
+    <figure>
 
-    <p  class="justify">
-      Voici à quoi ressemble le module sur la partie d'affichage du site.
+    <figure>
+      <a target="_blank" href="/assets/images/module-xtrmexample-backend.jpg" class="screenshot-link">
+        <img id="scrback" class="screenshot-full" src="/assets/images/module-xtrmexample-backend.jpg" alt="Module Xtrm Example Backend" />
+      </a>
+      <figcaption class="justify">
+          Voici à quoi devrait ressembler le module sur la partie d'administration du site.
+      </figcaption>
+    <figure>
+
+    <p class="text-justify">
+      Notez ici que la position ainsi que l'affichage dépendra du choix que vous aurait fait dans la configuration du votre module.
     </p>
 
-    <a target="_blank" href="/assets/images/module-xtrmexample-backend.jpg" class="screenshot-link">
-      <img class="screenshot-full" src="/assets/images/module-xtrmexample-backend.jpg" alt="Module Xtrm Example Backend" />
-    </a>
-    <p  class="justify">
-        Voici à quoi ressemble le module sur la partie d'administration du site.
-    </p>
 
     <h2>Téléchargement</h2>
     <table class="table table-hover">
@@ -64,4 +69,4 @@ downloads:
       </tbody>
     </table>
   </div>
-</div>
+</article>
