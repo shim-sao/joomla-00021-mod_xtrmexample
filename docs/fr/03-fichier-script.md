@@ -59,7 +59,7 @@ class Mod_XtrmExampleInstallerScript
 	Cette class sera instanciée quelque soit le mode utilisé: installation, mise à jour désinstallation.
 </p>
 
-### Déclaration les méthodes d'événements.
+### Déclaration des méthodes d'événements.
 
 <p class="text-justify">
 	La méthode <code>install($parent)</code> est la méthode qui va être appelée lors de l'installation du module.
