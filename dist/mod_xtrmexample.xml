@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="module" version="{{version_joomla}}" method="upgrade">
 	<name>mod_xtrmexample</name>
-	<version>4.0.01.03.1362219</version>
+	<version>4.0.01.03.1362239</version>
 	<creationDate>16 May. 2019</creationDate>
 	<author>shim-sao</author>
 	<authorName>shim-sao</authorName>

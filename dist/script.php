@@ -4,7 +4,7 @@
  * Installation script of the Joomla Module XtrmAddons Example.
  * php version 7.2.10
  *
- * @version    4.0.01.03.1362219
+ * @version    4.0.01.03.1362239
  * @category   XtrmAddons
  * @package    Joomla
  * @subpackage mod_xtrmexample
@@ -28,7 +28,7 @@ defined('_JEXEC') or die;
  * @author     	shim-sao <contact@xtrmaddons.com>
  * @copyright  	Copyright 2019-2019 XtrmAddons.com. All rights reserved.
  * @license    	https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL
- * @version    	4.0.01.03.1362219
+ * @version    	4.0.01.03.1362239
  * @link       	https://www.xtrmaddons.com/
  *
  * @access     	public
@@ -41,7 +41,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @var string $extensionName
 	 */
-	private $extensionName = "00021-mod_xtrmexample";
+	private $extensionName = "mod_xtrmexample";
 
 	/**
 	 * Method to install the component.
@@ -50,7 +50,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
-	 * @version 4.0.01.03.1362219
+	 * @version 4.0.01.03.1362239
 	 *
 	 * @return 	void
 	 */
@@ -71,7 +71,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
-	 * @version 4.0.01.03.1362219
+	 * @version 4.0.01.03.1362239
 	 *
 	 * @return void
 	 */
@@ -92,7 +92,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
-	 * @version 4.0.01.03.1362219
+	 * @version 4.0.01.03.1362239
 	 *
 	 * @return 	void
 	 */
@@ -115,7 +115,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
-	 * @version 4.0.01.03.1362219
+	 * @version 4.0.01.03.1362239
 	 *
 	 * @return 	void
 	 */
@@ -137,7 +137,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @access	public
 	 * @since 	4.0.01.03.136
-	 * @version 4.0.01.03.1362219
+	 * @version 4.0.01.03.1362239
 	 *
 	 * @return 	void
 	 */
@@ -156,7 +156,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
-	 * @version 4.0.01.03.1362219
+	 * @version 4.0.01.03.1362239
 	 *
 	 * @return 	void
 	 */
