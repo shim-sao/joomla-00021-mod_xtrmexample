@@ -10,7 +10,7 @@ comments: true
 ## Le fichier Script
 
 <p>
-	Nom du fichier: <code>script.php</code>
+	Nom du fichier: <code><span class="nc">script.php</span></code>
 </p>
 
 <p class="text-justify">
