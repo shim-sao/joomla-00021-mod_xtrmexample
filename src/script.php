@@ -41,7 +41,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @var string $extensionName
 	 */
-	private $extensionName = "00021-mod_xtrmexample";
+	private $extensionName = "mod_xtrmexample";
 
 	/**
 	 * Method to install the component.
@@ -124,6 +124,7 @@ class Mod_XtrmExampleInstallerScript
 		echo '<p class="alert alert-warning">'
 			. 'Method: postflight<br />'
 			. 'Type: ' . $type
+			. '<br />'
 			. 'Parent: ' . get_class($parent)
 			. '</p>';
 	}
@@ -145,6 +146,7 @@ class Mod_XtrmExampleInstallerScript
 		echo '<p class="alert alert-warning">'
 			. 'Method: preflight<br />'
 			. 'Type: ' . $type
+			. '<br />'
 			. 'Parent: ' . get_class($parent)
 			. '</p>';
 	}
