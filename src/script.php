@@ -56,7 +56,12 @@ class Mod_XtrmExampleInstallerScript
 	 */
 	public function install($parent)
 	{
-		echo '<p>' . JText::_('MOD_XTRMEXAMPLE_INSTALL_SUCCESS') . '</p>';
+		echo '<p class="alert alert-info">'
+			. 'Method: Install<br />'
+			. 'Parent: ' . get_class($parent)
+			. '</p><p class="alert alert-success">'
+			. JText::_('MOD_XTRMEXAMPLE_INSTALL_SUCCESS')
+			. '</p>';
 	}
 
 	/**
@@ -72,7 +77,12 @@ class Mod_XtrmExampleInstallerScript
 	 */
 	public function uninstall($parent)
 	{
-		echo '<p>' . JText::_('MOD_XTRMEXAMPLE_UNINSTALL_SUCCESS') . '</p>';
+		echo '<p class="alert alert-info">'
+			. 'Method: uninstall<br />'
+			. 'Parent: ' . get_class($parent)
+			. '</p><p class="alert alert-success">'
+			. JText::_('MOD_XTRMEXAMPLE_UNINSTALL_SUCCESS')
+			. '</p>';
 	}
 
 	/**
@@ -89,11 +99,16 @@ class Mod_XtrmExampleInstallerScript
 	public function update($parent)
 	{
 		$this->cleanUpdatesSites();
-		echo '<p>' . JText::sprintf('MOD_XTRMEXAMPLE_UPDATE_SUCCESS', $parent->get('manifest')->version) . '</p>';
+		echo '<p class="alert alert-info">'
+			. 'Method: update<br />'
+			. 'Parent: ' . get_class($parent)
+			. '</p><p class="alert alert-success">'
+			. JText::_('MOD_XTRMEXAMPLE_UPDATE_SUCCESS', $parent->get('manifest')->version)
+			. '</p>';
 	}
 
 	/**
-	 * Method to run after an install/update/uninstall method.
+	 * Method run after an install/update/uninstall method.
 	 *
 	 * @param 	string	$type	is the type of change (install, update or discover_install)
 	 * @param 	object	$parent	is the class calling this method
@@ -106,7 +121,32 @@ class Mod_XtrmExampleInstallerScript
 	 */
 	public function postflight($type, $parent)
 	{
-		// Do nothing
+		echo '<p class="alert alert-warning">'
+			. 'Method: postflight<br />'
+			. 'Type: ' . $type
+			. 'Parent: ' . get_class($parent)
+			. '</p>';
+	}
+
+	/**
+	 * Method run before an install/update/uninstall method.
+	 *
+	 * @param 	string	$type	is the type of change (install, update or discover_install)
+	 * @param 	object	$parent	is the class calling this method
+	 *
+	 * @access	public
+	 * @since 	4.0.01.03.136
+	 * @version {{version_build}}
+	 *
+	 * @return 	void
+	 */
+	public function preflight($type, $parent)
+	{
+		echo '<p class="alert alert-warning">'
+			. 'Method: preflight<br />'
+			. 'Type: ' . $type
+			. 'Parent: ' . get_class($parent)
+			. '</p>';
 	}
 
 	/**
