@@ -67,7 +67,7 @@ class Mod_XtrmExampleInstallerScript
 /**
  * Method to install the component.
  *
- * @param   object $parent The class that calling this method.
+ * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent The class that calling this method.
  *
  * @access	public
  * @since 	4.0.00.01.190425
@@ -96,7 +96,7 @@ public function install($parent)
 /**
  * Method to uninstall the component.
  *
- * @param	object	$parent	is the class calling this method.
+ * @param		Joomla\CMS\Installer\Adapter\ModuleAdapter	$parent	is the class calling this method.
  *
  * @access	public
  * @since 	4.0.00.01.190425
@@ -125,7 +125,7 @@ public function uninstall($parent)
 /**
  * Method to update the component.
  *
- * @param 	object $parent is the class calling this method.
+ * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method.
  *
  * @access	public
  * @since 	4.0.00.01.190425
