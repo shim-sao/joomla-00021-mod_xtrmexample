@@ -4,7 +4,8 @@
 
 # reference site
 url: "https://www.xtrmaddons.com/"
-cname: "https://github.joomla.mod_xtrmexample.xtrmaddons.com/"
+cname: "https://github.joomla.mod-xtrmexample.xtrmaddons.com/"
+url_repo: "https://github.com/shim-sao/joomla-00021-mod_xtrmexample/"
 
 # company or user name
 author: "XtrmAddons"
