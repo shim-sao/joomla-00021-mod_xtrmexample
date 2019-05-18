@@ -178,7 +178,7 @@ public function postflight($type, $parent)
 #### preflight
 
 <p class="text-justify">
-	La méthode <code>postflight($parent)</code> est une méthode qui va être appelée au début de l'éxécution du script quelque soit le mode, installation, désinstallation ou mise à jour du module, <code>$parent</code> étant la class appelante du script ce qui permet d'accèder à ses informations ou méthodes publiques.
+	La méthode <code>preflight($parent)</code> est une méthode qui va être appelée au début de l'éxécution du script quelque soit le mode, installation, désinstallation ou mise à jour du module, <code>$parent</code> étant la class appelante du script ce qui permet d'accèder à ses informations ou méthodes publiques.
 </p>
 
 ```php
