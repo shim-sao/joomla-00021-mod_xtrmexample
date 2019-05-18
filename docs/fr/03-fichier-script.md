@@ -205,3 +205,12 @@ public function preflight($type, $parent)
 }
 ```
 
+### Déroulement des événements en image.
+
+<figure>
+	<figcaption class="text-justify">
+		Voici une capture d'écran pour notre example du déroulement de l'installation du module.<br />
+		Le module étant déjà installé, les méthodes utilisées correspondent au mode de mise à jour, <span class="font-italic">update</span>, cependant le même processus reste valable avec les autres modes d'événements que sont <span class="font-italic">install, uninstall</span>.
+	</figcaption>
+	<img src="/assets/images/module-xtrmexample-install.jpg" alt="Module XtrmExample Install" title="Module XtrmExample Install" />
+</figure>
