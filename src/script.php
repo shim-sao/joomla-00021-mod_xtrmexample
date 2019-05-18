@@ -46,7 +46,7 @@ class Mod_XtrmExampleInstallerScript
 	/**
 	 * Method to install the component.
 	 *
-	 * @param   object $parent The class that calling this method.
+	 * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent The class that calling this method.
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
@@ -67,7 +67,7 @@ class Mod_XtrmExampleInstallerScript
 	/**
 	 * Method to uninstall the component.
 	 *
-	 * @param	object	$parent	is the class calling this method.
+	 * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter $parent	is the class calling this method.
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
@@ -88,7 +88,7 @@ class Mod_XtrmExampleInstallerScript
 	/**
 	 * Method to update the component.
 	 *
-	 * @param 	object $parent is the class calling this method.
+	 * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method.
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
@@ -103,15 +103,15 @@ class Mod_XtrmExampleInstallerScript
 			. 'Method: update<br />'
 			. 'Parent: ' . get_class($parent)
 			. '</p><p class="alert alert-success">'
-			. JText::_('MOD_XTRMEXAMPLE_UPDATE_SUCCESS', $parent->get('manifest')->version)
+			. JText::_('MOD_XTRMEXAMPLE_UPDATE_SUCCESS', (string) $parent->getManifest()->version)
 			. '</p>';
 	}
 
 	/**
 	 * Method run after an install/update/uninstall method.
 	 *
-	 * @param 	string	$type	is the type of change (install, update or discover_install)
-	 * @param 	object	$parent	is the class calling this method
+	 * @param 	string 																			$type 	is the type of change (install, update or discover_install)
+	 * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter 	$parent is the class calling this method
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
@@ -132,8 +132,8 @@ class Mod_XtrmExampleInstallerScript
 	/**
 	 * Method run before an install/update/uninstall method.
 	 *
-	 * @param 	string	$type	is the type of change (install, update or discover_install)
-	 * @param 	object	$parent	is the class calling this method
+	 * @param 	string 																			$type 	is the type of change (install, update or discover_install)
+	 * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter 	$parent is the class calling this method
 	 *
 	 * @access	public
 	 * @since 	4.0.01.03.136
@@ -145,6 +145,10 @@ class Mod_XtrmExampleInstallerScript
 	{
 		echo '<p class="alert alert-warning">'
 			. 'Method: preflight<br />'
+			. 'Name: ' . $parent->getName()
+			. '<br />'
+			. 'Element: ' . $parent->getElement()
+			. '<br />'
 			. 'Type: ' . $type
 			. '<br />'
 			. 'Parent: ' . get_class($parent)
@@ -152,7 +156,7 @@ class Mod_XtrmExampleInstallerScript
 	}
 
 	/**
-	 * Method to clean updates site liste.
+	 * Method to clean updates site list.
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
