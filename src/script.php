@@ -37,13 +37,6 @@ defined('_JEXEC') or die;
 class Mod_XtrmExampleInstallerScript
 {
 	/**
-	 * The full name of the module.
-	 *
-	 * @var string $extensionName
-	 */
-	private $extensionName = "mod_xtrmexample";
-
-	/**
 	 * Method to install the component.
 	 *
 	 * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent The class that calling this method.
@@ -103,7 +96,7 @@ class Mod_XtrmExampleInstallerScript
 			. 'Method: update<br />'
 			. 'Parent: ' . get_class($parent)
 			. '</p><p class="alert alert-success">'
-			. JText::_('MOD_XTRMEXAMPLE_UPDATE_SUCCESS', (string) $parent->getManifest()->version)
+			. JText::_('MOD_XTRMEXAMPLE_UPDATE_SUCCESS')
 			. '</p>';
 	}
 
@@ -149,6 +142,8 @@ class Mod_XtrmExampleInstallerScript
 			. '<br />'
 			. 'Element: ' . $parent->getElement()
 			. '<br />'
+			. 'Version: ' . (string) $parent->getManifest()->version
+			. '<br /><br />'
 			. 'Type: ' . $type
 			. '<br />'
 			. 'Parent: ' . get_class($parent)
@@ -171,14 +166,14 @@ class Mod_XtrmExampleInstallerScript
 
 		$query->select($db->q('update_site_id'))
 			->from($db->qn('#__update_sites'))
-			->where($db->qn('location') . ' LIKE ' . $db->q('%' . $this->extensionName . '%'))
+			->where($db->qn('location') . ' LIKE ' . $db->q('%' . $this->element . '%'))
 			->order('update_site_id DESC');
 
 		$id    = $db->setQuery($query)->loadResult();
 		$query = $db->getQuery(true);
 
 		$query->delete($db->qn('#__update_sites'))
-			->where($db->qn('location') . ' LIKE ' . $db->q('%' . $this->extensionName . '%'))
+			->where($db->qn('location') . ' LIKE ' . $db->q('%' . $this->element . '%'))
 			->where($db->qn('update_site_id') . ' != ' . $db->q($id));
 
 		$db->setQuery($query)->execute();
