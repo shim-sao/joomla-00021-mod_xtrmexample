@@ -38,26 +38,42 @@ defined('_JEXEC') or die;
 </p>
 
 <p class="text-justify">
-	Ici le nom du module choisit est <code>XtrmExample</code> mais c'est à vous de définir un nom qui doit être unique et définitif.<br />
+
+	Ici le <span class="nc text-italic">nom du module</span> choisit est <code>XtrmExample</code> (sans les crochets bien sûr) mais c'est à vous de définir un nom qui doit être unique et définitif.<br />
 </p>
 
 <p class="text-justify">
-	Nous allons donc définir la class suivante:<br />
+	Nous allons donc définir la class PHP suivante:<br />
 </p>
 
 ```php
+/**
+ * Script file of XtrmAddons component.
+ *
+ * @category   	example
+ * @package    	Joomla
+ * @subpackage 	mod_xtrmexample
+ * @author     	example <example@example.com>
+ * @copyright  	Copyright 2019-2019 example.com. All rights reserved.
+ * @license    	https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL
+ * @version    	4.0.01.03.1391229
+ * @link       	https://www.example.com/
+ *
+ * @access     	public
+ * @since 			4.0.00.01.190425
+ */
 class Mod_XtrmExampleInstallerScript
 {
   // Déclarer ici les méthodes d'événements.
 }
 ```
 <p class="text-justify">
-	Cette class sera instanciée quelque soit le mode utilisé: installation, mise à jour désinstallation.
+	Cette class sera instanciée quelque soit le mode utilisé: installation, mise à jour ou désinstallation.
 </p>
 
 ### Déclaration des méthodes d'événements.
 
-#### Install
+#### La méthode <span class="text-italic">Install</span>
 
 <p class="text-justify">
 	La méthode <code>install($parent)</code> est la méthode qui va être appelée lors de l'installation du module, <code>$parent</code> étant la class appelante du script ce qui permet d'accèder à ses informations ou méthodes publiques.
@@ -71,7 +87,7 @@ class Mod_XtrmExampleInstallerScript
  *
  * @access	public
  * @since 	4.0.00.01.190425
- * @version 4.0.01.03.1362219
+ * @version 4.0.01.03.1391229
  *
  * @return 	void
  */
@@ -86,7 +102,7 @@ public function install($parent)
 }
 ```
 
-#### Uninstall
+#### La méthode <span class="text-italic">Uninstall</span>
 
 <p class="text-justify">
 	La méthode <code>uninstall($parent)</code> est la méthode qui va être appelée lors de la désinstallation du module, <code>$parent</code> étant la class appelante du script ce qui permet d'accèder à ses informations ou méthodes publiques.
@@ -96,13 +112,13 @@ public function install($parent)
 /**
  * Method to uninstall the component.
  *
- * @param		Joomla\CMS\Installer\Adapter\ModuleAdapter	$parent	is the class calling this method.
+ * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter $parent	is the class calling this method.
  *
  * @access	public
  * @since 	4.0.00.01.190425
- * @version 4.0.01.03.1362219
+ * @version 4.0.01.03.1391229
  *
- * @return  void
+ * @return void
  */
 public function uninstall($parent)
 {
@@ -115,7 +131,7 @@ public function uninstall($parent)
 }
 ```
 
-#### Update
+#### La méthode <span class="text-italic">Update</span>
 
 <p class="text-justify">
 	La méthode <code>update($parent)</code> est la méthode qui va être appelée lors de la mise à jour du module, <code>$parent</code> étant la class appelante du script ce qui permet d'accèder à ses informations ou méthodes publiques.
@@ -129,7 +145,7 @@ public function uninstall($parent)
  *
  * @access	public
  * @since 	4.0.00.01.190425
- * @version 4.0.01.03.1362219
+ * @version 4.0.01.03.1391229
  *
  * @return 	void
  */
@@ -140,12 +156,12 @@ public function update($parent)
 		. 'Method: update<br />'
 		. 'Parent: ' . get_class($parent)
 		. '</p><p class="alert alert-success">'
-		. JText::_('MOD_XTRMEXAMPLE_UPDATE_SUCCESS', $parent->get('manifest')->version)
+		. JText::_('MOD_XTRMEXAMPLE_UPDATE_SUCCESS')
 		. '</p>';
 }
 ```
 
-#### postflight
+#### La méthode <span class="text-italic">postflight</span>
 
 <p class="text-justify">
 	La méthode <code>postflight($parent)</code> est une méthode qui va être appelée à la fin de l'éxécution du script quelque soit le mode, installation, désinstallation ou mise à jour du module, <code>$parent</code> étant la class appelante du script ce qui permet d'accèder à ses informations ou méthodes publiques.
@@ -155,12 +171,12 @@ public function update($parent)
 /**
  * Method run after an install/update/uninstall method.
  *
- * @param 	string	$type	is the type of change (install, update or discover_install)
- * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter	$parent	is the class calling this method
+ * @param 	string 																			$type 	is the type of change (install, update or discover_install)
+ * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter 	$parent is the class calling this method
  *
  * @access	public
  * @since 	4.0.00.01.190425
- * @version 4.0.01.03.1362219
+ * @version 4.0.01.03.1391229
  *
  * @return 	void
  */
@@ -172,10 +188,12 @@ public function postflight($type, $parent)
 		. '<br />'
 		. 'Parent: ' . get_class($parent)
 		. '</p>';
+
+	$this->copyright($parent);
 }
 ```
 
-#### preflight
+#### La méthode <span class="text-italic">preflight</span>
 
 <p class="text-justify">
 	La méthode <code>preflight($parent)</code> est une méthode qui va être appelée au début de l'éxécution du script quelque soit le mode, installation, désinstallation ou mise à jour du module, <code>$parent</code> étant la class appelante du script ce qui permet d'accèder à ses informations ou méthodes publiques.
@@ -185,12 +203,12 @@ public function postflight($type, $parent)
 /**
  * Method run before an install/update/uninstall method.
  *
- * @param 	string	$type	is the type of change (install, update or discover_install)
- * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter	$parent	is the class calling this method
+ * @param 	string 																			$type 	is the type of change (install, update or discover_install)
+ * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter 	$parent is the class calling this method
  *
  * @access	public
  * @since 	4.0.01.03.136
- * @version 4.0.01.03.1362219
+ * @version 4.0.01.03.1391229
  *
  * @return 	void
  */
@@ -198,6 +216,12 @@ public function preflight($type, $parent)
 {
 	echo '<p class="alert alert-warning">'
 		. 'Method: preflight<br />'
+		. 'Name: ' . $parent->getName()
+		. '<br />'
+		. 'Element: ' . $parent->getElement()
+		. '<br />'
+		. 'Version: ' . (string) $parent->getManifest()->version
+		. '<br /><br />'
 		. 'Type: ' . $type
 		. '<br />'
 		. 'Parent: ' . get_class($parent)
