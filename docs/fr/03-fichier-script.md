@@ -34,12 +34,12 @@ defined('_JEXEC') or die;
 ### Déclaration de la class d'installation
 
 <p class="text-justify">
-  Nom de la class: <code><span class="nc">Mod_</span><span class="nc text-italic">[nom du module]</span><span class="nc">InstallerScript</span></code>
+  Nom de la class: <code><span class="nc">Mod_</span><span class="nc font-italic">[nom du module]</span><span class="nc">InstallerScript</span></code>
 </p>
 
 <p class="text-justify">
 
-  Ici le <span class="nc text-italic">nom du module</span> choisit est <code>XtrmExample</code> (sans les crochets bien sûr) mais c'est à vous de définir un nom qui doit être unique et définitif.<br />
+  Ici le <span class="nc font-italic">nom du module</span> choisit est <code>XtrmExample</code> (sans les crochets bien sûr) mais c'est à vous de définir un nom qui doit être unique et définitif.<br />
 </p>
 
 <p class="text-justify">
@@ -112,7 +112,7 @@ public function install($parent)
 /**
  * Method to uninstall the component.
  *
- * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter $parent	is the class calling this method.
+ * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method.
  *
  * @access  public
  * @since   4.0.00.01.190425
@@ -141,13 +141,13 @@ public function uninstall($parent)
 /**
  * Method to update the component.
  *
- * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method.
+ * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method.
  *
- * @access	public
- * @since 	4.0.00.01.190425
+ * @access  public
+ * @since   4.0.00.01.190425
  * @version 4.0.01.03.1391229
  *
- * @return 	void
+ * @return  void
  */
 public function update($parent)
 {
@@ -171,11 +171,11 @@ public function update($parent)
 /**
  * Method run after an install/update/uninstall method.
  *
- * @param 	string 																			$type 	is the type of change (install, update or discover_install)
- * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter 	$parent is the class calling this method
+ * @param   string                                     $type 	is the type of change (install, update or discover_install)
+ * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method
  *
- * @access	public
- * @since 	4.0.00.01.190425
+ * @access  public
+ * @since   4.0.00.01.190425
  * @version 4.0.01.03.1391229
  *
  * @return 	void
@@ -203,14 +203,14 @@ public function postflight($type, $parent)
 /**
  * Method run before an install/update/uninstall method.
  *
- * @param 	string 																			$type 	is the type of change (install, update or discover_install)
- * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter 	$parent is the class calling this method
+ * @param    string                                     $type   is the type of change (install, update or discover_install)
+ * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter  $parent is the class calling this method
  *
- * @access	public
- * @since 	4.0.01.03.136
+ * @access  public
+ * @since   4.0.01.03.136
  * @version 4.0.01.03.1391229
  *
- * @return 	void
+ * @return  void
  */
 public function preflight($type, $parent)
 {
