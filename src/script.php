@@ -120,6 +120,8 @@ class Mod_XtrmExampleInstallerScript
 			. '<br />'
 			. 'Parent: ' . get_class($parent)
 			. '</p>';
+
+		$this->copyright($parent);
 	}
 
 	/**
@@ -147,6 +149,36 @@ class Mod_XtrmExampleInstallerScript
 			. 'Type: ' . $type
 			. '<br />'
 			. 'Parent: ' . get_class($parent)
+			. '</p>';
+	}
+
+	/**
+	 * Method to display copyright informations.
+	 *
+	 * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter 	$parent is the class calling this method
+	 *
+	 * @access	public
+	 * @since 	4.0.01.03.1391207
+	 * @version {{version_build}}
+	 *
+	 * @return 	void
+	 */
+	public function copyright($parent)
+	{
+		// Explode license assuming: link name
+		$license = explode(' ', (string) $parent->getManifest()->license);
+
+		// Displays copyright
+		echo '<p class="text-center">'
+			. 'Author: ' . (string) $parent->getManifest()->author
+			. ' - Version:' . (string) $parent->getManifest()->version
+			. ' - License: <a target="_blank" href="' . $license[0] . '">'
+			. (empty($license[0]) ? '' : pathinfo($license[0], PATHINFO_FILENAME))
+			. (empty($license[0]) || empty($license[1]) ? '' : ' ')
+			. (empty($license[1]) ? '' : $license[1])
+			. '</a>'
+			. '<br />'
+			. (string) $parent->getManifest()->copyright
 			. '</p>';
 	}
 
