@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="module" version="{{version_joomla}}" method="upgrade">
-	<name>mod_xtrmexample</name>
-	<version>4.0.01.03.1362239</version>
-	<creationDate>16 May. 2019</creationDate>
+	<name>Module ☆ Example</name>
+	<element>mod_xtrmexample</element>
+	<version>4.0.01.03.1391229</version>
+	<creationDate>19 May. 2019</creationDate>
 	<author>shim-sao</author>
 	<authorName>shim-sao</authorName>
 	<authorEmail>contact@xtrmaddons.com</authorEmail>
@@ -114,6 +115,6 @@
 
 	<!-- Extension Update Specification -->
 	<updateservers>
-		<server name="XtrmAddons - Module Xtrm Example Update" priority="1" type="extension">https://github.joomla.mod_xtrmexample.xtrmaddons.com/download/release/update-4.0.xml</server>
+		<server name="XtrmAddons - Module Xtrm Example Update" priority="1" type="extension">https://github.joomla.mod-xtrmexample.xtrmaddons.com/download/release/update-4.0.xml</server>
 	</updateservers>
 </extension>

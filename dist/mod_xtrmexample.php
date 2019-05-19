@@ -1,10 +1,10 @@
 <?php
 /**
- * mod_xtrmexample.php, build date : 16 May. 2019
+ * mod_xtrmexample.php, build date : 19 May. 2019
  * Installation script of the Joomla Module XtrmAddons To Top.
  * php version 7.2.10
  *
- * @version    4.0.01.03.1362239
+ * @version    4.0.01.03.1391229
  * @category   XtrmAddons
  * @package    Joomla
  * @subpackage mod_xtrmexample
