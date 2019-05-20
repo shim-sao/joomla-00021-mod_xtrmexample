@@ -83,7 +83,7 @@ class Mod_XtrmExampleInstallerScript
 /**
  * Method to install the component.
  *
- * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent The class that calling this method.
+ * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method.
  *
  * @access  public
  * @since   4.0.00.01.190425
@@ -118,7 +118,7 @@ public function install($parent)
  * @since   4.0.00.01.190425
  * @version 4.0.01.03.1391229
  *
- * @return void
+ * @return  void
  */
 public function uninstall($parent)
 {
@@ -171,7 +171,7 @@ public function update($parent)
 /**
  * Method run after an install/update/uninstall method.
  *
- * @param   string                                     $type 	is the type of change (install, update or discover_install)
+ * @param   string $type 	is the type of change (install, update or discover_install)
  * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method
  *
  * @access  public
@@ -203,8 +203,8 @@ public function postflight($type, $parent)
 /**
  * Method run before an install/update/uninstall method.
  *
- * @param    string                                     $type   is the type of change (install, update or discover_install)
- * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter  $parent is the class calling this method
+ * @param   string $type   is the type of change (install, update or discover_install)
+ * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method
  *
  * @access  public
  * @since   4.0.01.03.136
