@@ -16,7 +16,7 @@ comments: true
 <p class="text-justify">
   Le fichier <code><span class="nc">script.php</span></code> est un fichier commun appelé par Joomla lors de l'installation d'une extension.<br />
   Il permet de gérer et de personnaliser les différents événements qui peuvent se produire durant l'installation, la mise à jour ou encore la désinstallation d'un module, d'un plugin, d'une bibliothèque ou d'un composant.<br />
-  Comme événements, nous pouvons citer: installation, désinstallation, mise à jour et "post flight" qui est appelée en fin d'execution quel que soit le mode utilisé.
+  Comme événements, nous pouvons citer: installation, désinstallation, mise à jour, "pre flight" et "post flight" qui est appelée en fin d'execution quel que soit le mode utilisé.
 </p>
 
 ### Déclaration d'un fichier pour Joomla
@@ -27,7 +27,7 @@ comments: true
 </p>
 
 ```php
-// Check to ensure this file is included in Joomla!
+// Vérifie que ce fichier est inclus dans Joomla!
 defined('_JEXEC') or die;
 ```
 
@@ -38,8 +38,7 @@ defined('_JEXEC') or die;
 </p>
 
 <p class="text-justify">
-
-  Ici le <span class="nc font-italic">nom du module</span> choisit est <code>XtrmExample</code> (sans les crochets bien sûr) mais c'est à vous de définir un nom qui doit être unique et définitif.<br />
+  Ici le <span class="nc font-italic">nom du module</span> choisi est <code>XtrmExample</code> (sans les crochets bien sûr) mais c'est à vous de définir un nom qui doit être unique et définitif.<br />
 </p>
 
 <p class="text-justify">
@@ -81,9 +80,9 @@ class Mod_XtrmExampleInstallerScript
 
 ```php
 /**
- * Method to install the component.
+ * Methode pour l'installation de l'extension.
  *
- * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method.
+ * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent la classe appellant cette méthode.
  *
  * @access  public
  * @since   4.0.00.01.190425
@@ -110,9 +109,9 @@ public function install($parent)
 
 ```php
 /**
- * Method to uninstall the component.
+ * Methode pour la désinstallation de l'extension.
  *
- * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method.
+ * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent la classe appellant cette méthode.
  *
  * @access  public
  * @since   4.0.00.01.190425
@@ -139,9 +138,9 @@ public function uninstall($parent)
 
 ```php
 /**
- * Method to update the component.
+ * Methode pour la mise à jour de l'extension.
  *
- * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method.
+ * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent la classe appellant cette méthode.
  *
  * @access  public
  * @since   4.0.00.01.190425
@@ -161,38 +160,6 @@ public function update($parent)
 }
 ```
 
-#### La méthode <span class="text-italic">postflight</span>
-
-<p class="text-justify">
-  La méthode <code>postflight($parent)</code> est une méthode qui va être appelée à la fin de l'éxécution du script quelque soit le mode, installation, désinstallation ou mise à jour du module, <code>$parent</code> étant la class appelante du script ce qui permet d'accèder à ses informations ou méthodes publiques.
-</p>
-
-```php
-/**
- * Method run after an install/update/uninstall method.
- *
- * @param   string $type 	is the type of change (install, update or discover_install)
- * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method
- *
- * @access  public
- * @since   4.0.00.01.190425
- * @version 4.0.01.03.1391229
- *
- * @return 	void
- */
-public function postflight($type, $parent)
-{
-  echo '<p class="alert alert-warning">'
-    . 'Method: postflight<br />'
-    . 'Type: ' . $type
-    . '<br />'
-    . 'Parent: ' . get_class($parent)
-    . '</p>';
-
-  $this->copyright($parent);
-}
-```
-
 #### La méthode <span class="text-italic">preflight</span>
 
 <p class="text-justify">
@@ -201,10 +168,10 @@ public function postflight($type, $parent)
 
 ```php
 /**
- * Method run before an install/update/uninstall method.
+ * Methode appelée avant l'une des méthode install/update/uninstall.
  *
- * @param   string $type   is the type of change (install, update or discover_install)
- * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method
+ * @param   string $type est le type de changement (install, update or discover_install)
+ * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent la classe appellant cette méthode.
  *
  * @access  public
  * @since   4.0.01.03.136
@@ -229,11 +196,43 @@ public function preflight($type, $parent)
 }
 ```
 
+#### La méthode <span class="text-italic">postflight</span>
+
+<p class="text-justify">
+  La méthode <code>postflight($parent)</code> est une méthode qui va être appelée à la fin de l'éxécution du script quelque soit le mode, installation, désinstallation ou mise à jour du module, <code>$parent</code> étant la class appelante du script ce qui permet d'accèder à ses informations ou méthodes publiques.
+</p>
+
+```php
+/**
+ * Method appelée après l'une des méthode install/update/uninstall method.
+ *
+ * @param   string $type 	is the type of change (install, update or discover_install)
+ * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent la classe appellant cette méthode.
+ *
+ * @access  public
+ * @since   4.0.00.01.190425
+ * @version 4.0.01.03.1391229
+ *
+ * @return 	void
+ */
+public function postflight($type, $parent)
+{
+  echo '<p class="alert alert-warning">'
+    . 'Method: postflight<br />'
+    . 'Type: ' . $type
+    . '<br />'
+    . 'Parent: ' . get_class($parent)
+    . '</p>';
+
+  $this->copyright($parent);
+}
+```
+
 ### Déroulement des événements en image.
 
 <figure>
   <figcaption class="text-justify">
-    Voici une capture d'écran pour notre example du déroulement de l'installation du module.<br />
+    Voici une capture d'écran pour notre exemple du déroulement de l'installation du module.<br />
     Le module étant déjà installé, les méthodes utilisées correspondent au mode de mise à jour, <span class="font-italic">update</span>, cependant le même processus reste valable avec les autres modes d'événements que sont <span class="font-italic">install, uninstall</span>.
   </figcaption>
   <img src="/assets/images/module-xtrmexample-install.jpg" alt="Module XtrmExample Install" title="Module XtrmExample Install" />
