@@ -1,17 +1,17 @@
 <?php
 /**
- * script.php, build date : {{creation_date}}
+ * script.php, build date : 21 May. 2019
  * Installation script of the Joomla Module XtrmAddons Example.
  * php version 7.2.10
  *
- * @version    {{version_build}}
- * @category   {{category}}
- * @package    {{framework}}
- * @subpackage {{element}}
- * @author     {{author}} <{{author_email}}>
- * @copyright  {{copyright}}
- * @license    {{license_link}}
- * @link       {{packager_url}}
+ * @version    4.0.01.03.1411358
+ * @category   XtrmAddons
+ * @package    Joomla
+ * @subpackage mod_xtrmexample
+ * @author     shim-sao <contact@xtrmaddons.com>
+ * @copyright  Copyright 2019-2019 XtrmAddons.com. All rights reserved.
+ * @license    https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL
+ * @link       https://www.xtrmaddons.com/
  */
 
 // Check to ensure this file is included in Joomla!
@@ -22,14 +22,14 @@ defined('_JEXEC') or die;
 /**
  * Script file of XtrmAddons component.
  *
- * @category   	{{category}}
- * @package    	{{framework}}
- * @subpackage 	{{element}}
- * @author     	{{author}} <{{author_email}}>
- * @copyright  	{{copyright}}
- * @license    	{{license_link}}
- * @version    	{{version_build}}
- * @link       	{{packager_url}}
+ * @category   	XtrmAddons
+ * @package    	Joomla
+ * @subpackage 	mod_xtrmexample
+ * @author     	shim-sao <contact@xtrmaddons.com>
+ * @copyright  	Copyright 2019-2019 XtrmAddons.com. All rights reserved.
+ * @license    	https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL
+ * @version    	4.0.01.03.1411358
+ * @link       	https://www.xtrmaddons.com/
  *
  * @access     	public
  * @since 			4.0.00.01.190425
@@ -43,7 +43,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
-	 * @version {{version_build}}
+	 * @version 4.0.01.03.1411358
 	 *
 	 * @return 	void
 	 */
@@ -64,7 +64,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
-	 * @version {{version_build}}
+	 * @version 4.0.01.03.1411358
 	 *
 	 * @return void
 	 */
@@ -85,7 +85,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
-	 * @version {{version_build}}
+	 * @version 4.0.01.03.1411358
 	 *
 	 * @return 	void
 	 */
@@ -108,7 +108,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
-	 * @version {{version_build}}
+	 * @version 4.0.01.03.1411358
 	 *
 	 * @return 	void
 	 */
@@ -132,7 +132,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @access	public
 	 * @since 	4.0.01.03.136
-	 * @version {{version_build}}
+	 * @version 4.0.01.03.1411358
 	 *
 	 * @return 	void
 	 */
@@ -159,7 +159,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @access	public
 	 * @since 	4.0.01.03.1391207
-	 * @version {{version_build}}
+	 * @version 4.0.01.03.1411358
 	 *
 	 * @return 	void
 	 */
@@ -187,7 +187,7 @@ class Mod_XtrmExampleInstallerScript
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
-	 * @version {{version_build}}
+	 * @version 4.0.01.03.1411358
 	 *
 	 * @return 	void
 	 */

@@ -1,17 +1,17 @@
 <?php
 /**
- * XtrmExampleHelper.php, build date : {{creation_date}}
+ * XtrmExampleHelper.php, build date : 21 May. 2019
  * Helper file of the Joomla Module XtrmAddons Example.
  * php version 7.2.10
  *
- * @version    {{version_build}}
- * @category   {{category}}
- * @package    {{framework}}
- * @subpackage {{element}}
- * @author     {{author}} <{{author_email}}>
- * @copyright  {{copyright}}
- * @license    {{license_link}}
- * @link       {{packager_url}}
+ * @version    4.0.01.03.1411358
+ * @category   XtrmAddons
+ * @package    Joomla
+ * @subpackage mod_xtrmexample
+ * @author     shim-sao <contact@xtrmaddons.com>
+ * @copyright  Copyright 2019-2019 XtrmAddons.com. All rights reserved.
+ * @license    https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL
+ * @link       https://www.xtrmaddons.com/
  */
 namespace Joomla\Module\XtrmExample\Site\Helper;
 
@@ -28,14 +28,14 @@ use Joomla\CMS\Router\Route;
 /**
  * Class Module XtrmAddons Example Helper.
  *
- * @category   	{{category}}
- * @package    	{{framework}}
- * @subpackage 	{{element}}
- * @author     	{{author}} <{{author_email}}>
- * @copyright  	{{copyright}}
- * @license    	{{license_link}}
- * @version    	{{version_build}}
- * @link       	{{packager_url}}
+ * @category   	XtrmAddons
+ * @package    	Joomla
+ * @subpackage 	mod_xtrmexample
+ * @author     	shim-sao <contact@xtrmaddons.com>
+ * @copyright  	Copyright 2019-2019 XtrmAddons.com. All rights reserved.
+ * @license    	https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL
+ * @version    	4.0.01.03.1411358
+ * @link       	https://www.xtrmaddons.com/
  *
  * @access		 	public
  * @since 			4.0.00.01.190426
@@ -49,7 +49,7 @@ class XtrmExampleHelper
 	 *
 	 * @access 	public
 	 * @since 	4.0.00.01.190426
-	 * @version {{version_build}}
+	 * @version 4.0.01.03.1411358
 	 *
 	 * @return  string
 	 */
