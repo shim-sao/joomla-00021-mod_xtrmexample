@@ -31,6 +31,8 @@ comments: true
 defined('_JEXEC') or die;
 ```
 
+<br/>
+
 ### Declaration of the installation class
 
 <p class="text-justify">
@@ -104,7 +106,7 @@ public function install($parent)
 #### The method <span class="text-italic">Uninstall</span>
 
 <p class="text-justify">
-  La méthode <code>uninstall($parent)</code> est la méthode qui va être appelée lors de la désinstallation du module, <code>$parent</code> étant la class appelante du script ce qui permet d'accèder à ses informations ou méthodes publiques.
+  La méthode <code>uninstall($parent)</code> is the method that will be called during the uninstallation of the module, <code>$parent</code> being the calling class of the script which makes it possible to access its information or public methods.
 </p>
 
 ```php
@@ -133,7 +135,7 @@ public function uninstall($parent)
 #### The method <span class="text-italic">Update</span>
 
 <p class="text-justify">
-  The method <code>update($parent)</code> est la méthode qui va être appelée lors de la mise à jour du module, <code>$parent</code> étant la class appelante du script ce qui permet d'accèder à ses informations ou méthodes publiques.
+  The method <code>update($parent)</code> is the method that will be called during the update of the module, <code>$parent</code> being the calling class of the script which makes it possible to access its information or public methods.
 </p>
 
 ```php
@@ -160,10 +162,46 @@ public function update($parent)
 }
 ```
 
+#### The method <span class="text-italic">preflight</span>
+
+<p class="text-justify">
+  The method <code>preflight($parent)</code> is a method that will be called at the beginning of the execution of the script whatever the mode, installation, uninstallation or update of the module, <code>$parent</code> being the calling class of the script which makes it possible to access its information or public methods.
+</p>
+
+```php
+/**
+ * Method run before an install/update/uninstall method.
+ *
+ * @param   string $type is the type of change (install, update or discover_install)
+ * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method
+ *
+ * @access  public
+ * @since   4.0.01.03.136
+ * @version 4.0.01.03.1391229
+ *
+ * @return  void
+ */
+public function preflight($type, $parent)
+{
+  echo '<p class="alert alert-warning">'
+    . 'Method: preflight<br />'
+    . 'Name: ' . $parent->getName()
+    . '<br />'
+    . 'Element: ' . $parent->getElement()
+    . '<br />'
+    . 'Version: ' . (string) $parent->getManifest()->version
+    . '<br /><br />'
+    . 'Type: ' . $type
+    . '<br />'
+    . 'Parent: ' . get_class($parent)
+    . '</p>';
+}
+```
+
 #### The method <span class="text-italic">postflight</span>
 
 <p class="text-justify">
-  The method <code>postflight($parent)</code> est une méthode qui va être appelée à la fin de l'éxécution du script quelque soit le mode, installation, désinstallation ou mise à jour du module, <code>$parent</code> étant la class appelante du script ce qui permet d'accèder à ses informations ou méthodes publiques.
+  The method <code>postflight($parent)</code> is a method that will be called at the end of the execution of the script whatever the mode, installation, uninstallation or update of the module, <code>$parent</code> being the calling class of the script which makes it possible to access its information or public methods.
 </p>
 
 ```php
@@ -189,42 +227,6 @@ public function postflight($type, $parent)
     . '</p>';
 
   $this->copyright($parent);
-}
-```
-
-#### The method <span class="text-italic">preflight</span>
-
-<p class="text-justify">
-  The method <code>preflight($parent)</code> est une méthode qui va être appelée au début de l'éxécution du script quelque soit le mode, installation, désinstallation ou mise à jour du module, <code>$parent</code> étant la class appelante du script ce qui permet d'accèder à ses informations ou méthodes publiques.
-</p>
-
-```php
-/**
- * Method run before an install/update/uninstall method.
- *
- * @param   string $type   is the type of change (install, update or discover_install)
- * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method
- *
- * @access  public
- * @since   4.0.01.03.136
- * @version 4.0.01.03.1391229
- *
- * @return  void
- */
-public function preflight($type, $parent)
-{
-  echo '<p class="alert alert-warning">'
-    . 'Method: preflight<br />'
-    . 'Name: ' . $parent->getName()
-    . '<br />'
-    . 'Element: ' . $parent->getElement()
-    . '<br />'
-    . 'Version: ' . (string) $parent->getManifest()->version
-    . '<br /><br />'
-    . 'Type: ' . $type
-    . '<br />'
-    . 'Parent: ' . get_class($parent)
-    . '</p>';
 }
 ```
 
