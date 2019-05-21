@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<extension type="module" version="4.0" method="upgrade">
-	<name>mod_xtrmexample</name>
-  <version>4.0.01.02.1230059</version>
-	<creationDate>03 May. 2019</creationDate>
+<extension type="module" version="{{version_joomla}}" method="upgrade">
+	<name>Module ☆ Example</name>
+	<element>mod_xtrmexample</element>
+	<version>4.0.01.03.1411358</version>
+	<creationDate>21 May. 2019</creationDate>
 	<author>shim-sao</author>
 	<authorName>shim-sao</authorName>
 	<authorEmail>contact@xtrmaddons.com</authorEmail>
 	<authorUrl>https://github.com/shim-sao/</authorUrl>
 	<packager>xtrmaddons.com</packager>
 	<packagerurl>https://www.xtrmaddons.com/</packagerurl>
-  <copyright>Copyright 2019-2019 XtrmAddons.com. All rights reserved.</copyright>
-  <license>https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<copyright>Copyright 2019-2019 XtrmAddons.com. All rights reserved.</copyright>
+	<license>https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
 	<description>MOD_XTRMEXAMPLE_XML_DESCRIPTION</description>
 
 	<!-- Set module namespace -->
@@ -111,9 +112,9 @@
 			</fieldset>
 		</fields>
 	</config>
-	
-  <!-- Extension Update Specification -->
+
+	<!-- Extension Update Specification -->
 	<updateservers>
-		<server name="XtrmAddons - Module Xtrm Example Update" priority="1" type="extension">https://github.joomla.mod_xtrmexample.xtrmaddons.com/download/release/update-4.0.xml</server>
+		<server name="XtrmAddons - Module Xtrm Example Update" priority="1" type="extension">https://github.joomla.mod-xtrmexample.xtrmaddons.com/download/release/update-4.0.xml</server>
 	</updateservers>
 </extension>

@@ -1,10 +1,10 @@
 <?php
 /**
- * default.php, build date : 03 May. 2019
+ * default.php, build date : 21 May. 2019
  * Default template file of the Joomla Module XtrmAddons Example.
  * php version 7.2.10
  *
- * @version    4.0.01.02.1230059
+ * @version    4.0.01.03.1411358
  * @category   XtrmAddons
  * @package    Joomla
  * @subpackage mod_xtrmexample

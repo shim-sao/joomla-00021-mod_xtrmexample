@@ -37,16 +37,9 @@ defined('_JEXEC') or die;
 class Mod_XtrmExampleInstallerScript
 {
 	/**
-	 * The full name of the module.
-	 *
-	 * @var string $extensionName
-	 */
-	private $extensionName = "00021-mod_xtrmexample";
-
-	/**
 	 * Method to install the component.
 	 *
-	 * @param   object $parent The class that calling this method.
+	 * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent The class that calling this method.
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
@@ -67,7 +60,7 @@ class Mod_XtrmExampleInstallerScript
 	/**
 	 * Method to uninstall the component.
 	 *
-	 * @param	object	$parent	is the class calling this method.
+	 * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter $parent	is the class calling this method.
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
@@ -88,7 +81,7 @@ class Mod_XtrmExampleInstallerScript
 	/**
 	 * Method to update the component.
 	 *
-	 * @param 	object $parent is the class calling this method.
+	 * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method.
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
@@ -103,15 +96,15 @@ class Mod_XtrmExampleInstallerScript
 			. 'Method: update<br />'
 			. 'Parent: ' . get_class($parent)
 			. '</p><p class="alert alert-success">'
-			. JText::_('MOD_XTRMEXAMPLE_UPDATE_SUCCESS', $parent->get('manifest')->version)
+			. JText::_('MOD_XTRMEXAMPLE_UPDATE_SUCCESS')
 			. '</p>';
 	}
 
 	/**
 	 * Method run after an install/update/uninstall method.
 	 *
-	 * @param 	string	$type	is the type of change (install, update or discover_install)
-	 * @param 	object	$parent	is the class calling this method
+	 * @param 	string 																			$type 	is the type of change (install, update or discover_install)
+	 * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter 	$parent is the class calling this method
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
@@ -124,15 +117,18 @@ class Mod_XtrmExampleInstallerScript
 		echo '<p class="alert alert-warning">'
 			. 'Method: postflight<br />'
 			. 'Type: ' . $type
+			. '<br />'
 			. 'Parent: ' . get_class($parent)
 			. '</p>';
+
+		$this->copyright($parent);
 	}
 
 	/**
 	 * Method run before an install/update/uninstall method.
 	 *
-	 * @param 	string	$type	is the type of change (install, update or discover_install)
-	 * @param 	object	$parent	is the class calling this method
+	 * @param 	string 																			$type 	is the type of change (install, update or discover_install)
+	 * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter 	$parent is the class calling this method
 	 *
 	 * @access	public
 	 * @since 	4.0.01.03.136
@@ -144,13 +140,50 @@ class Mod_XtrmExampleInstallerScript
 	{
 		echo '<p class="alert alert-warning">'
 			. 'Method: preflight<br />'
+			. 'Name: ' . $parent->getName()
+			. '<br />'
+			. 'Element: ' . $parent->getElement()
+			. '<br />'
+			. 'Version: ' . (string) $parent->getManifest()->version
+			. '<br /><br />'
 			. 'Type: ' . $type
+			. '<br />'
 			. 'Parent: ' . get_class($parent)
 			. '</p>';
 	}
 
 	/**
-	 * Method to clean updates site liste.
+	 * Method to display copyright informations.
+	 *
+	 * @param 	Joomla\CMS\Installer\Adapter\ModuleAdapter 	$parent is the class calling this method
+	 *
+	 * @access	public
+	 * @since 	4.0.01.03.1391207
+	 * @version {{version_build}}
+	 *
+	 * @return 	void
+	 */
+	public function copyright($parent)
+	{
+		// Explode license assuming: link name
+		$license = explode(' ', (string) $parent->getManifest()->license);
+
+		// Displays copyright
+		echo '<p class="text-center">'
+			. 'Author: ' . (string) $parent->getManifest()->author
+			. ' - Version:' . (string) $parent->getManifest()->version
+			. ' - License: <a target="_blank" href="' . $license[0] . '">'
+			. (empty($license[0]) ? '' : pathinfo($license[0], PATHINFO_FILENAME))
+			. (empty($license[0]) || empty($license[1]) ? '' : ' ')
+			. (empty($license[1]) ? '' : $license[1])
+			. '</a>'
+			. '<br />'
+			. (string) $parent->getManifest()->copyright
+			. '</p>';
+	}
+
+	/**
+	 * Method to clean updates site list.
 	 *
 	 * @access	public
 	 * @since 	4.0.00.01.190425
@@ -165,14 +198,14 @@ class Mod_XtrmExampleInstallerScript
 
 		$query->select($db->q('update_site_id'))
 			->from($db->qn('#__update_sites'))
-			->where($db->qn('location') . ' LIKE ' . $db->q('%' . $this->extensionName . '%'))
+			->where($db->qn('location') . ' LIKE ' . $db->q('%' . $this->element . '%'))
 			->order('update_site_id DESC');
 
 		$id    = $db->setQuery($query)->loadResult();
 		$query = $db->getQuery(true);
 
 		$query->delete($db->qn('#__update_sites'))
-			->where($db->qn('location') . ' LIKE ' . $db->q('%' . $this->extensionName . '%'))
+			->where($db->qn('location') . ' LIKE ' . $db->q('%' . $this->element . '%'))
 			->where($db->qn('update_site_id') . ' != ' . $db->q($id));
 
 		$db->setQuery($query)->execute();

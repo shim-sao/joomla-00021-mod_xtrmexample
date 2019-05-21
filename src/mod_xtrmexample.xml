@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="{{type}}" version="{{version_joomla}}" method="upgrade">
-	<name>{{element}}</name>
+	<name>{{name}}</name>
+	<element>{{element}}</element>
 	<version>{{version_build}}</version>
 	<creationDate>{{creation_date}}</creationDate>
 	<author>{{author}}</author>
