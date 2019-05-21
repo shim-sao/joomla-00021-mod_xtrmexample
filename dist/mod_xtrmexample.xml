@@ -2,8 +2,8 @@
 <extension type="module" version="{{version_joomla}}" method="upgrade">
 	<name>Module ☆ Example</name>
 	<element>mod_xtrmexample</element>
-	<version>4.0.01.03.1391229</version>
-	<creationDate>19 May. 2019</creationDate>
+	<version>4.0.01.03.1411358</version>
+	<creationDate>21 May. 2019</creationDate>
 	<author>shim-sao</author>
 	<authorName>shim-sao</authorName>
 	<authorEmail>contact@xtrmaddons.com</authorEmail>
