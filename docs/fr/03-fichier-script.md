@@ -31,6 +31,8 @@ comments: true
 defined('_JEXEC') or die;
 ```
 
+<br/>
+
 ### Déclaration de la class d'installation
 
 <p class="text-justify">
@@ -70,6 +72,8 @@ class Mod_XtrmExampleInstallerScript
   Cette class sera instanciée quelque soit le mode utilisé: installation, mise à jour ou désinstallation.
 </p>
 
+<br/>
+
 ### Déclaration des méthodes d'événements.
 
 #### La méthode <span class="text-italic">Install</span>
@@ -101,6 +105,8 @@ public function install($parent)
 }
 ```
 
+<br/>
+
 #### La méthode <span class="text-italic">Uninstall</span>
 
 <p class="text-justify">
@@ -129,6 +135,8 @@ public function uninstall($parent)
     . '</p>';
 }
 ```
+
+<br/>
 
 #### La méthode <span class="text-italic">Update</span>
 
@@ -159,6 +167,8 @@ public function update($parent)
     . '</p>';
 }
 ```
+
+<br/>
 
 #### La méthode <span class="text-italic">preflight</span>
 
@@ -196,6 +206,8 @@ public function preflight($type, $parent)
 }
 ```
 
+<br/>
+
 #### La méthode <span class="text-italic">postflight</span>
 
 <p class="text-justify">
@@ -228,6 +240,8 @@ public function postflight($type, $parent)
 }
 ```
 
+<br/>
+
 ### Déroulement des événements en image.
 
 <figure>
@@ -235,5 +249,7 @@ public function postflight($type, $parent)
     Voici une capture d'écran pour notre exemple du déroulement de l'installation du module.<br />
     Le module étant déjà installé, les méthodes utilisées correspondent au mode de mise à jour, <span class="font-italic">update</span>, cependant le même processus reste valable avec les autres modes d'événements que sont <span class="font-italic">install, uninstall</span>.
   </figcaption>
-  <img src="/assets/images/module-xtrmexample-install.jpg" alt="Module XtrmExample Install" title="Module XtrmExample Install" />
+  <a target="_blank" href="/assets/images/module-xtrmexample-install.jpg" class="Module XtrmExample Install">
+    <img src="/assets/images/module-xtrmexample-install.jpg" alt="Module XtrmExample Install" title="Module XtrmExample Install" />
+  </a>
 </figure>
