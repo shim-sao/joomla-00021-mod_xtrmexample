@@ -12,5 +12,5 @@
 /_layouts/*
 # /dist/*
 /docs/*
-# /download/*
+/download/*
 /src/src.zip
