@@ -72,6 +72,8 @@ class Mod_XtrmExampleInstallerScript
   This class will be instantiated whatever the mode used: installation, update or uninstallation.
 </p>
 
+<br/>
+
 ### Declaration of the methods of events.
 
 #### The method <span class="text-italic">Install</span>
@@ -103,6 +105,8 @@ public function install($parent)
 }
 ```
 
+<br/>
+
 #### The method <span class="text-italic">Uninstall</span>
 
 <p class="text-justify">
@@ -131,6 +135,8 @@ public function uninstall($parent)
     . '</p>';
 }
 ```
+
+<br/>
 
 #### The method <span class="text-italic">Update</span>
 
@@ -161,6 +167,8 @@ public function update($parent)
     . '</p>';
 }
 ```
+
+<br/>
 
 #### The method <span class="text-italic">preflight</span>
 
@@ -198,6 +206,8 @@ public function preflight($type, $parent)
 }
 ```
 
+<br/>
+
 #### The method <span class="text-italic">postflight</span>
 
 <p class="text-justify">
@@ -229,6 +239,8 @@ public function postflight($type, $parent)
   $this->copyright($parent);
 }
 ```
+
+<br/>
 
 ### Course of events in image.
 
