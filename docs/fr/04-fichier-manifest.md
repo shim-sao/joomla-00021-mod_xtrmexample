@@ -11,13 +11,18 @@ comments: true
 ## Le fichier Manifest
 
 <p>
-  Nom du fichier: <code>manifest.xml</code>
+  Nom du fichier: <a href="https://github.com/shim-sao/joomla-00021-mod_xtrmexample/blob/master/dist/script.php" target="_blank"><code><span class="nc">mod_xtrmexample.xml</span></code></a>
 </p>
 
 <p class="text-justify">
   Le fichier <code>manifest.xml</code> est un fichier commun analysé par Joomla lors de l'installation, la configuuration ou encore l'affichage d'une extension.<br />
   Il permet de gérer et de personnaliser de façon générale les différentes informations relatives à une extension ainsi que ses paramètres d'initialisation et de configuration.<br />
   Vous allez apprendre ici comment définir un module de façon simple et lui apporter les elements dont vous pourriez avoir besoin pour personnaliser votre développement.
+</p>
+
+<p class="text-justify alert alert-info">
+  Pour un module, le fichier manifest doit porter le nom du module: mod_nom_du_module.xml<br />
+  Pour notre exemple, le fichier sera mod_xtrmaddons.xml
 </p>
 
 ### Déclaration d'un fichier xml
