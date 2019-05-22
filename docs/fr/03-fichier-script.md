@@ -10,7 +10,7 @@ comments: true
 ## Le fichier Script
 
 <p>
-  Nom du fichier: <a href="https://github.com/shim-sao/joomla-00021-mod_xtrmexample/blob/master/src/script.php" target="_blank"><code><span class="nc">script.php</span></code></a>
+  Nom du fichier: <a href="https://github.com/shim-sao/joomla-00021-mod_xtrmexample/blob/master/dist/script.php" target="_blank"><code><span class="nc">script.php</span></code></a>
 </p>
 
 <p class="text-justify">
