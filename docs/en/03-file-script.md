@@ -11,7 +11,7 @@ comments: true
 ## The file Script
 
 <p>
-  Name of the file: <a href="https://github.com/shim-sao/joomla-00021-mod_xtrmexample/blob/master/src/script.php" target="_blank"><code><span class="nc">script.php</span></code></a>
+  Name of the file: <a href="https://github.com/shim-sao/joomla-00021-mod_xtrmexample/blob/master/dist/script.php" target="_blank"><code><span class="nc">script.php</span></code></a>
 </p>
 
 <p class="text-justify">
