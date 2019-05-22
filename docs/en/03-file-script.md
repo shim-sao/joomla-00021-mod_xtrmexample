@@ -110,7 +110,7 @@ public function install($parent)
 #### The method <span class="text-italic">Uninstall</span>
 
 <p class="text-justify">
-  La méthode <code>uninstall($parent)</code> is the method that will be called during the uninstallation of the module, <code>$parent</code> being the calling class of the script which makes it possible to access its information or public methods.
+  The method <code>uninstall($parent)</code> is the method that will be called during the uninstallation of the module, <code>$parent</code> being the calling class of the script which makes it possible to access its information or public methods.
 </p>
 
 ```php
