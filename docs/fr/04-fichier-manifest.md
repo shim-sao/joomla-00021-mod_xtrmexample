@@ -11,7 +11,7 @@ comments: true
 ## Le fichier Manifest
 
 <p>
-  Nom du fichier: <a href="https://github.com/shim-sao/joomla-00021-mod_xtrmexample/blob/master/dist/script.php" target="_blank"><code><span class="nc">mod_xtrmexample.xml</span></code></a>
+  Nom du fichier: <a href="https://github.com/shim-sao/joomla-00021-mod_xtrmexample/blob/master/dist/mod_xtrmexample.xml" target="_blank"><code><span class="nc">mod_xtrmexample.xml</span></code></a>
 </p>
 
 <p class="text-justify">
