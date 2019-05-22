@@ -93,7 +93,7 @@ comments: true
 </languages>
 ```
 
-### Définir les fichiers langue
+### Définir les fichiers assets ou media
 
 ```xml
 <!-- Media files -->
@@ -132,6 +132,8 @@ comments: true
   </fields>
 </config>
 ```
+
+### Définir un serveur de mise à jour
 
 ```xml
 <!-- Extension Update Specification -->
