@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<extension type="{{type}}" version="{{version_joomla}}" method="upgrade">
+<extension type="{{type}}" version="{{version_framework}}" method="upgrade">
 	<name>{{name}}</name>
 	<element>{{element}}</element>
 	<version>{{version_build}}</version>
