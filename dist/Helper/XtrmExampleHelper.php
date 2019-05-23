@@ -1,10 +1,10 @@
 <?php
 /**
- * XtrmExampleHelper.php, build date : 21 May. 2019
+ * XtrmExampleHelper.php, build date : 23 May. 2019
  * Helper file of the Joomla Module XtrmAddons Example.
  * php version 7.2.10
  *
- * @version    4.0.01.03.1411358
+ * @version    4.0.01.03.1431139
  * @category   XtrmAddons
  * @package    Joomla
  * @subpackage mod_xtrmexample
@@ -34,7 +34,7 @@ use Joomla\CMS\Router\Route;
  * @author     	shim-sao <contact@xtrmaddons.com>
  * @copyright  	Copyright 2019-2019 XtrmAddons.com. All rights reserved.
  * @license    	https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL
- * @version    	4.0.01.03.1411358
+ * @version    	4.0.01.03.1431139
  * @link       	https://www.xtrmaddons.com/
  *
  * @access		 	public
@@ -49,7 +49,7 @@ class XtrmExampleHelper
 	 *
 	 * @access 	public
 	 * @since 	4.0.00.01.190426
-	 * @version 4.0.01.03.1411358
+	 * @version 4.0.01.03.1431139
 	 *
 	 * @return  string
 	 */
