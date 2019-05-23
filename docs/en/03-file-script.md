@@ -249,5 +249,7 @@ public function postflight($type, $parent)
     Here is a screen shot for our example of the module installation process.<br />
     Since the module is already installed, the methods used correspond to the update mode, <span class="font-italic">update</span>, however the same process remains valid with the other event modes that are <span class="font-italic">install, uninstall</span>.
   </figcaption>
-  <img src="/assets/images/module-xtrmexample-install.jpg" alt="Module XtrmExample Install" title="Module XtrmExample Install" />
+  <a target="_blank" href="/assets/images/module-xtrmexample-install.jpg" class="Module XtrmExample Install">
+    <img src="/assets/images/module-xtrmexample-install.jpg" alt="Module XtrmExample Install" title="Module XtrmExample Install" />
+  </a>
 </figure>
