@@ -4,7 +4,7 @@
  * Default template file of the Joomla Module XtrmAddons Example.
  * php version 7.2.10
  *
- * @version    4.0.01.03.1431139
+ * @version    4.0.01.03.1431144
  * @category   XtrmAddons
  * @package    Joomla
  * @subpackage mod_xtrmexample

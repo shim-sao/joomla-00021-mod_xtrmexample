@@ -2,7 +2,7 @@
 <extension type="module" version="4.0" method="upgrade">
 	<name>Module ☆ Example</name>
 	<element>mod_xtrmexample</element>
-	<version>4.0.01.03.1431139</version>
+	<version>4.0.01.03.1431144</version>
 	<creationDate>23 May. 2019</creationDate>
 	<author>shim-sao</author>
 	<authorName>shim-sao</authorName>
