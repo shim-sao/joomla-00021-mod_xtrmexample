@@ -11,15 +11,15 @@
       
     <header id="content-header">
       {% include common/navbar.html %}
-    </header>
 
-    {% if page.breadcrumb %}
-    <div class="container-fluid container-breadcrumb">
-      <div class="container">
-        {% include common/breadcrumb.html %}
+      {% if page.breadcrumb %}
+      <div class="container-fluid container-breadcrumb">
+        <div class="container">
+          {% include common/breadcrumb.html %}
+        </div>
       </div>
-    </div>
-    {% endif %}
+      {% endif %}
+    </header>
 
     {% if page.submenu %}
     <div id="content-submenu" class="container-fluid container-submenu">
