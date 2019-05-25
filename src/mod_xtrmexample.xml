@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<extension type="{{type}}" version="{{version_framework}}" method="upgrade">
+<extension type="{{type}}" version="{{version_framework}}" method="upgrade" client="{{client_id}}">
 	<name>{{name}}</name>
 	<element>{{element}}</element>
 	<version>{{version_build}}</version>
@@ -12,7 +12,7 @@
 	<packagerurl>{{packager_url}}</packagerurl>
 	<copyright>{{copyright}}</copyright>
 	<license>{{license_link}}</license>
-	<description>MOD_XTRMEXAMPLE_XML_DESCRIPTION</description>
+	<description>{{ELEMENT}}_XML_DESCRIPTION</description>
 
 	<!-- Set module namespace -->
 	<namespace>Joomla\Module\XtrmExample</namespace>
@@ -21,26 +21,26 @@
 	<scriptfile>script.php</scriptfile>
 
 	<!-- Set help -->
-	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_XTRMEXAMPLE" />
+	<!-- <help key="JHELP_EXTENSIONS_MODULE_MANAGER_XTRMEXAMPLE" /> -->
 
 	<!-- Main File Copy -->
 	<files>
 		<folder>Helper</folder>
 		<folder>tmpl</folder>
-		<filename module="mod_xtrmexample">mod_xtrmexample.php</filename>
-		<filename>mod_xtrmexample.xml</filename>
+		<filename module="{{element}}">{{element}}.php</filename>
+		<filename>{{element}}.xml</filename>
 	</files>
 
 	<!-- Language File Copy -->
 	<languages folder="language">
-		<language tag="en-GB">en-GB/en-GB.mod_xtrmexample.ini</language>
-		<language tag="en-GB">en-GB/en-GB.mod_xtrmexample.sys.ini</language>
-		<language tag="fr-FR">fr-FR/fr-FR.mod_xtrmexample.ini</language>
-		<language tag="fr-FR">fr-FR/fr-FR.mod_xtrmexample.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.{{element}}.ini</language>
+		<language tag="en-GB">en-GB/en-GB.{{element}}.sys.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.{{element}}.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.{{element}}.sys.ini</language>
 	</languages>
 
 	<!-- Media files -->
-	<media folder="media" destination="mod_xtrmexample">
+	<media folder="media" destination="{{element}}">
 		<folder>css</folder>
 		<folder>image</folder>
 		<folder>js</folder>
@@ -58,8 +58,8 @@
 				<field
 					name="tag_id"
 					type="text"
-					description="MOD_XTRMEXAMPLE_FIELD_TAG_ID_DESC"
-					label="MOD_XTRMEXAMPLE_FIELD_TAG_ID_LABEL"
+					description="{{ELEMENT}}_FIELD_TAG_ID_DESC"
+					label="{{ELEMENT}}_FIELD_TAG_ID_LABEL"
 				/>
 
 				<field
@@ -115,6 +115,6 @@
 
 	<!-- Extension Update Specification -->
 	<updateservers>
-		<server name="XtrmAddons - Module Xtrm Example Update" priority="1" type="extension">{{update_folder}}</server>
+		<server name="XtrmAddons - {{name}} Update" priority="1" type="extension">{{update_folder}}</server>
 	</updateservers>
 </extension>
