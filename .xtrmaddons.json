@@ -8,11 +8,11 @@
   "category": "XtrmAddons",
   "client_id": "site",
   "code": "00021",
-  "copyright": "Copyright 2019-2019 XtrmAddons.com. All rights reserved.",
+  "copyright": "Copyright 2019-2020 XtrmAddons.com. All rights reserved.",
   "description": "XtrmAddons Joomla Module Example.",
   "download": {
-    "debug": "https://github.joomla.mod-xtrmexample.xtrmaddons.com/download/debug",
-    "release": "https://github.joomla.mod-xtrmexample.xtrmaddons.com/download/release"
+    "debug": "https://download.xtrmaddons.com/joomla-4/joomla-00021-mod_xtrmexample/debug",
+    "release": "https://download.xtrmaddons.com/joomla-4/joomla-00021-mod_xtrmexample/release"
   },
   "update_file": {
     "debug": "update-4.0.xml",
@@ -30,7 +30,7 @@
   "packager": {
     "name": "xtrmaddons.com",
     "url": "https://www.xtrmaddons.com/",
-    "repo": "https://github.joomla.mod-xtrmexample.xtrmaddons.com"
+    "repo": "https://mod-xtrmexample.xtrmaddons.com"
   },
   "platform": "^(3\\.)",
   "plugin_folder": "",
