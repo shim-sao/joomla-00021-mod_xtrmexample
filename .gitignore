@@ -1,4 +1,5 @@
 # Visual Code Projects
+.history/*
 .vscode/*
 
 # Eclipse projects
@@ -10,7 +11,7 @@
 /.build/*
 /_includes/*
 /_layouts/*
-# /dist/*
+/dist/*
 /docs/*
 /download/*
 /src/src.zip
