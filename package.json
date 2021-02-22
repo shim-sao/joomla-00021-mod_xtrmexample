@@ -1,0 +1,17 @@
+{
+  "name": "joomla-00021-mod_xtrmexample",
+  "version": "4.0.01.04",
+  "author": "shim-sao",
+  "description": "XtrmAddons Joomla template",
+  "license": "GPL-3.0-or-later",
+  "debug": true,
+  "scripts": {
+    "build-all": "node node_modules/joomla-extensions-builder/vendor/bin/build.js -m all -c ../joomla-extensions-builder.config.json",
+    "build-dev": "node node_modules/joomla-extensions-builder/vendor/bin/build.js -m dev -c ../joomla-extensions-builder.config.json",
+    "build-stable": "node node_modules/joomla-extensions-builder/vendor/bin/build.js -m stable -c ../joomla-extensions-builder.config.json"
+  },
+  "dependencies": {
+    "joomla-extensions-builder": "git+https://github.com/shim-sao/joomla-extensions-builder.git"
+  },
+  "devDependencies": {}
+}

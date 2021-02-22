@@ -3,14 +3,18 @@
 
 # Eclipse projects
 /.settings/*
-/.buildpath
-/.project
+/.buildpath/*
+/.project/*
 
 # Project
 /.build/*
+/.history/*
 /_includes/*
 /_layouts/*
-# /dist/*
+/dist/*
 /docs/*
 /download/*
+/release/*
+/logs/*
+/node_modules/*
 /src/src.zip

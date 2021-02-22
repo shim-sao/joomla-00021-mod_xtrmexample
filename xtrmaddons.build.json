@@ -1,0 +1,63 @@
+{
+  "builder": {
+    "version_min": "0.0.1",
+    "version_max": "0.0.1"
+  },
+
+  "download": {
+    "url_dev": "https://download.xtrmaddons.com/joomla-4/joomla-00021-mod_xtrmexample/dev",
+    "url_stable": "https://download.xtrmaddons.com/joomla-4/joomla-00021-mod_xtrmexample/stable"
+  },
+
+  "extension": {
+    "category": "XtrmAddons",
+    "client_id": "site",
+    "code": "00021",
+    "cms": "Joomla",
+    "description": "XtrmAddons Joomla Module Example.",
+    "element": "mod_xtrmexample",
+    "folder": "modules",
+    "group": "",
+    "name": "mod_xtrmexample",
+    "platform": "^(3\\.)",
+    "plugin_folder": "",
+    "title": "Module ☆ Example",
+    "type": "module"
+  },
+
+  "manifest": {
+    "filename": "mod_xtrmexample.xml",
+    "update": {
+      "filename_dev": "update-4.0.xml",
+      "filename_stable": "update-4.0.xml"
+    }
+  },
+
+  "namespace": "",
+
+  "packager": {
+    "name": "xtrmaddons.com",
+    "url": "https://www.xtrmaddons.com/",
+    "repo": "https://mod-xtrmexample.xtrmaddons.com"
+  },
+
+  "files": {
+    "assets": [
+      "media/image/logo.png"
+    ],
+    "sources": [
+      "Helper/XtrmExampleHelper.php",
+      "language/en-GB/en-GB.mod_xtrmexample.ini",
+      "language/en-GB/en-GB.mod_xtrmexample.sys.ini",
+      "language/fr-FR/fr-FR.mod_xtrmexample.ini",
+      "language/fr-FR/fr-FR.mod_xtrmexample.sys.ini",
+      "media/css/default.css",
+      "media/js/default.js",
+      "media/js/default.min.js",
+      "tmpl/default.php",
+      "mod_xtrmexample.php",
+      "mod_xtrmexample.xml",
+      "script.php"
+    ]
+  }
+}

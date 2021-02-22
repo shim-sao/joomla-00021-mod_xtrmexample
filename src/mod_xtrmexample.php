@@ -1,17 +1,9 @@
 <?php
 /**
- * mod_xtrmexample.php, build date : {{creation_date}}
+ * mod_xtrmexample.php, build date : {{date.today}}, builder version : {{builder_version}}
  * Module Xtrm Example main file.
  * php version 7.2.10
- *
- * @version    {{version_build}}
- * @category   {{category}}
- * @package    {{framework}}
- * @subpackage {{element}}
- * @author     {{author}} <{{author_email}}>
- * @copyright  {{copyright}}
- * @license    {{license_link}}
- * @link       {{packager_url}}
+ * {{tmpl:tmpl/php/phpdocs.header.class.tmpl}}
  */
 
 // Check to ensure this file is included in Joomla!

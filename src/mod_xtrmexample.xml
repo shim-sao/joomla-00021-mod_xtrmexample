@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<extension type="{{type}}" version="{{version_framework}}" method="upgrade" client="{{client_id}}">
-	<name>{{name}}</name>
-	<element>{{element}}</element>
-	<version>{{version_build}}</version>
-	<creationDate>{{creation_date}}</creationDate>
-	<author>{{author}}</author>
-	<authorName>{{author_name}}</authorName>
-	<authorEmail>{{author_email}}</authorEmail>
-	<authorUrl>{{author_url}}</authorUrl>
-	<packager>{{packager}}</packager>
-	<packagerurl>{{packager_url}}</packagerurl>
-	<copyright>{{copyright}}</copyright>
-	<license>{{license_link}}</license>
-	<description>{{ELEMENT}}_XML_DESCRIPTION</description>
+<extension type="{{extension.type}}" version="{{version.framework}}" method="upgrade" client="{{extension.client_id}}">
+  <!-- Extension author informations -->
+  <author>{{author.name}}</author>
+  <authorEmail>{{author.email}}</authorEmail>
+  <authorName>{{author.name}}</authorName>
+  <authorUrl>{{author.url}}</authorUrl>
+
+	<name>{{extension.name}}</name>
+	<element>{{extension.element}}</element>
+	<version>{{version.build}}</version>
+	<creationDate>{{date.today}}</creationDate>
+	<packager>{{packager.name}}</packager>
+	<packagerurl>{{packager.url}}</packagerurl>
+	<copyright>{{author.copyright}}</copyright>
+	<license>{{author.license_url}}</license>
+	<description>{{EXTENSION.ELEMENT}}_XML_DESCRIPTION</description>
 
 	<!-- Set module namespace -->
 	<namespace>Joomla\Module\XtrmExample</namespace>
@@ -27,20 +29,20 @@
 	<files>
 		<folder>Helper</folder>
 		<folder>tmpl</folder>
-		<filename module="{{element}}">{{element}}.php</filename>
-		<filename>{{element}}.xml</filename>
+		<filename module="{{extension.element}}">{{extension.element}}.php</filename>
+		<filename>{{extension.element}}.xml</filename>
 	</files>
 
 	<!-- Language File Copy -->
 	<languages folder="language">
-		<language tag="en-GB">en-GB/en-GB.{{element}}.ini</language>
-		<language tag="en-GB">en-GB/en-GB.{{element}}.sys.ini</language>
-		<language tag="fr-FR">fr-FR/fr-FR.{{element}}.ini</language>
-		<language tag="fr-FR">fr-FR/fr-FR.{{element}}.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.{{extension.element}}.ini</language>
+		<language tag="en-GB">en-GB/en-GB.{{extension.element}}.sys.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.{{extension.element}}.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.{{extension.element}}.sys.ini</language>
 	</languages>
 
 	<!-- Media files -->
-	<media folder="media" destination="{{element}}">
+	<media folder="media" destination="{{extension.element}}">
 		<folder>css</folder>
 		<folder>image</folder>
 		<folder>js</folder>
@@ -58,15 +60,15 @@
 				<field
 					name="tag_id"
 					type="text"
-					description="{{ELEMENT}}_FIELD_TAG_ID_DESC"
-					label="{{ELEMENT}}_FIELD_TAG_ID_LABEL"
+					description="{{EXTENSION.ELEMENT}}_FIELD_TAG_ID_DESC"
+					label="{{EXTENSION.ELEMENT}}_FIELD_TAG_ID_LABEL"
 				/>
 
 				<field
 					name="class_sfx"
 					type="text"
-					description="MOD_XTRMEXAMPLE_FIELD_CLASS_DESC"
-					label="MOD_XTRMEXAMPLE_FIELD_CLASS_LABEL"
+					description="{{EXTENSION.ELEMENT}}_FIELD_CLASS_DESC"
+					label="{{EXTENSION.ELEMENT}}_FIELD_CLASS_LABEL"
 				/>
 
 				<field
@@ -115,6 +117,6 @@
 
 	<!-- Extension Update Specification -->
 	<updateservers>
-		<server name="XtrmAddons - {{name}} Update" priority="1" type="extension">{{update_folder}}</server>
+		<server name="XtrmAddons - {{extension.name}} Update" priority="1" type="extension">{{remote.update_url}}</server>
 	</updateservers>
 </extension>
