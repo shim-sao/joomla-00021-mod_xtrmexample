@@ -1,7 +1,7 @@
 <?php
 /**
  * mod_xtrmexample.php, build date : {{creation_date}}
- * Installation script of the Joomla Module XtrmAddons To Top.
+ * Module Xtrm Example main file.
  * php version 7.2.10
  *
  * @version    {{version_build}}
