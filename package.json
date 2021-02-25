@@ -8,7 +8,11 @@
   "scripts": {
     "build-all": "node node_modules/joomla-extensions-builder/vendor/bin/build.js -m all -c ../joomla-extensions-builder.config.json",
     "build-dev": "node node_modules/joomla-extensions-builder/vendor/bin/build.js -m dev -c ../joomla-extensions-builder.config.json",
-    "build-stable": "node node_modules/joomla-extensions-builder/vendor/bin/build.js -m stable -c ../joomla-extensions-builder.config.json"
+    "build-stable": "node node_modules/joomla-extensions-builder/vendor/bin/build.js -m stable -c ../joomla-extensions-builder.config.json",
+    "clean-all": "node node_modules/joomla-extensions-builder/vendor/bin/clean.js",
+    "clean-dev": "node node_modules/joomla-extensions-builder/vendor/bin/clean.js -m dev",
+    "clean-stable": "node node_modules/joomla-extensions-builder/vendor/bin/clean.js -m stable",
+    "debug": "node node_modules/joomla-extensions-builder/vendor/bin/debug.js"
   },
   "dependencies": {
     "joomla-extensions-builder": "git+https://github.com/shim-sao/joomla-extensions-builder.git"

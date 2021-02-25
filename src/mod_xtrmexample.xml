@@ -12,8 +12,8 @@
 	<creationDate>{{date.today}}</creationDate>
 	<packager>{{packager.name}}</packager>
 	<packagerurl>{{packager.url}}</packagerurl>
-	<copyright>{{author.copyright}}</copyright>
-	<license>{{author.license_url}}</license>
+	<copyright>{{common.copyright}}</copyright>
+	<license>{{common.license_url}}</license>
 	<description>{{EXTENSION.ELEMENT}}_XML_DESCRIPTION</description>
 
 	<!-- Set module namespace -->

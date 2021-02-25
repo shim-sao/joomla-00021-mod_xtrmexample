@@ -3,7 +3,7 @@
  * script.php, build date : {{date.today}}, builder version : {{builder_version}}
  * Installation script of the Joomla Module XtrmAddons Example.
  * php version 7.2.10
- * {{tmpl:tmpl/php/phpdocs.header.tmpl}}
+ * {{tmpl:php/phpdocs.header}}
  * @since      4.0.00.01.116.190425
  */
 
@@ -13,7 +13,7 @@ defined('_JEXEC') or die;
 
 /**
  * Script file of XtrmAddons component.
- * {{tmpl:tmpl/php/phpdocs.header.tmpl}}
+ * {{tmpl:php/phpdocs.header}}
  * @since      4.0.00.01.116.190425
  * 
  * @access     public
@@ -26,8 +26,8 @@ class Mod_XtrmExampleInstallerScript
    * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent The class that calling this method.
    *
    * @access  public
-   * @since   4.0.00.01.116.190425
    * @version {{version.build}}
+   * @since   4.0.00.01.116.190425
    *
    * @return   void
    */
@@ -47,8 +47,8 @@ class Mod_XtrmExampleInstallerScript
    * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent  is the class calling this method.
    *
    * @access  public
-   * @since   4.0.00.01.116.190425
    * @version {{version.build}}
+   * @since   4.0.00.01.116.190425
    *
    * @return void
    */
@@ -68,8 +68,8 @@ class Mod_XtrmExampleInstallerScript
    * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter $parent is the class calling this method.
    *
    * @access  public
-   * @since   4.0.00.01.116.190425
    * @version {{version.build}}
+   * @since   4.0.00.01.116.190425
    *
    * @return   void
    */
@@ -91,14 +91,14 @@ class Mod_XtrmExampleInstallerScript
    * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter   $parent is the class calling this method
    *
    * @access  public
-   * @since   4.0.00.01.116.190425
    * @version {{version.build}}
+   * @since   4.0.00.01.116.190425
    *
    * @return   void
    */
   public function postflight($type, $parent)
   {
-    echo '<p class="alert alert-warning">'
+    echo '<p class="alert alert-info">'
       . 'Method: postflight<br />'
       . 'Type: ' . $type
       . '<br />'
@@ -115,17 +115,18 @@ class Mod_XtrmExampleInstallerScript
    * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter   $parent is the class calling this method
    *
    * @access  public
-   * @since   4.0.01.03.136.000000
    * @version {{version.build}}
+   * @since   4.0.01.03.136.000000
    *
    * @return   void
    */
   public function preflight($type, $parent)
   {
-    echo '<p class="alert alert-warning">'
+    /*echo '<p class="alert alert-warning">'
       . 'Method: preflight<br />'
-      . 'Name: ' . $parent->getName()
-      . '<br />'
+      . "Name: {${$parent->getName()}}<br />"
+      // . 'Name: ' . $parent->getName()
+      // . '<br />'
       . 'Element: ' . $parent->getElement()
       . '<br />'
       . 'Version: ' . (string) $parent->getManifest()->version
@@ -133,7 +134,18 @@ class Mod_XtrmExampleInstallerScript
       . 'Type: ' . $type
       . '<br />'
       . 'Parent: ' . get_class($parent)
-      . '</p>';
+      . '</p>';*/
+
+      echo
+          '<p class="alert alert-info">'
+        . 'Method: preflight<br />'
+        . "Name: {${$parent->getName()}}<br />"
+        . "Element: {${$parent->getElement()}}<br />"
+        . "Version: {${(string)$parent->getManifest()->version}}<br /><br />"
+        . "Type: $type<br />"
+        . "Parent: {${get_class($parent)}}"
+        . '</p>'
+        ;
   }
 
   /**
@@ -142,8 +154,8 @@ class Mod_XtrmExampleInstallerScript
    * @param   Joomla\CMS\Installer\Adapter\ModuleAdapter   $parent is the class calling this method
    *
    * @access  public
-   * @since   4.0.01.03.139.120700
    * @version {{version.build}}
+   * @since   4.0.01.03.139.120700
    *
    * @return   void
    */
@@ -170,8 +182,8 @@ class Mod_XtrmExampleInstallerScript
    * Method to clean updates site list.
    *
    * @access  public
-   * @since   4.0.00.01.116.190425
    * @version {{version.build}}
+   * @since   4.0.00.01.116.190425
    *
    * @return   void
    */

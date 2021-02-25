@@ -3,15 +3,8 @@
  * default.php, build date : {{date.today}}, builder version : {{builder_version}}
  * Default template file of the Joomla Module XtrmAddons Example.
  * php version 7.2.10
- *
- * @version    {{version.build}}
- * @category   {{extension.category}}
- * @package    {{extension.cms}}
- * @subpackage {{extension.element}}
- * @author     {{author.name}} <{{author.email}}>
- * @copyright  {{author.copyright}}
- * @license    {{author.license_url}}
- * @link       {{packager.url}}
+ * {{tmpl:php/phpdocs.header}}
+ * @since      4.0.00.01.116.190425
  */
 
 // Check to ensure this file is included in Joomla!

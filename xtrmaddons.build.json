@@ -52,6 +52,7 @@
       "language/fr-FR/fr-FR.mod_xtrmexample.ini",
       "language/fr-FR/fr-FR.mod_xtrmexample.sys.ini",
       "media/css/default.css",
+      "media/css/default.min.css",
       "media/js/default.js",
       "media/js/default.min.js",
       "tmpl/default.php",

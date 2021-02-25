@@ -1,6 +1,6 @@
 /* 
- * default.js, build date : {{date.today}}, builder version : {{builder_version}}
- * Default Module XtrmAddons Example javascript
+ * default.min.css, build date : {{date.today}}, builder version : {{builder_version}}
+ * Default Module XtrmAddons Example minified styles
  *
  * @version    {{version.build}}
  * @category   {{extension.category}}
@@ -12,4 +12,4 @@
  * @license    {{common.license_url}}
  */
 
-// Put the code here :
+/* Put the code here :                            */

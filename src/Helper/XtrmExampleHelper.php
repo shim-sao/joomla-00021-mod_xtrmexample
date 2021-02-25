@@ -3,7 +3,8 @@
  * XtrmExampleHelper.php, build date : {{date.today}}, builder version : {{builder_version}}
  * Helper file of the Joomla Module XtrmAddons Example.
  * php version 7.2.10
- * {{tmpl:tmpl/php/phpdocs.header.tmpl}}
+ * {{tmpl:php/phpdocs.header}}
+ * @since      4.0.00.01.116.190426
  */
 namespace Joomla\Module\XtrmExample\Site\Helper;
 
@@ -19,10 +20,10 @@ use Joomla\CMS\Router\Route;
 
 /**
  * Class Module XtrmAddons Example Helper.
- * {{tmpl:tmpl/php/phpdocs.header.tmpl}}
- * @since       4.0.00.01.116.190426
+ * {{tmpl:php/phpdocs.header}}
+ * @since      4.0.00.01.116.190426
  *
- * @access      public
+ * @access     public
  */
 class XtrmExampleHelper
 {
@@ -32,8 +33,8 @@ class XtrmExampleHelper
    * @param   \Joomla\Registry\Registry $params The module options.
    *
    * @access 	public
-   * @since   4.0.00.01.116.190426
    * @version {{version.build}}
+   * @since   4.0.00.01.116.190426
    *
    * @return  string
    */
