@@ -1,20 +1,41 @@
 # Visual Code Projects
+.history/*
 .vscode/*
 
 # Eclipse projects
-/.settings/*
-/.buildpath/*
-/.project/*
+.settings/*
+.buildpath
+.project
 
-# Project
-/.build/*
-/.history/*
+# Project master
 /_includes/*
 /_layouts/*
+/.build/*
+/build/*
 /dist/*
 /docs/*
 /download/*
-/release/*
 /logs/*
 /node_modules/*
+/out/*
+/release/*
+git-history-reset.*
+
+# Package excludes folders
+/src/.backup/
+/src/.images/
+
+# Project gh-pages
+_includes/*
+_layouts/*
+docs/*
+download/*
+
+# Project custom - user
+.back/*
+.backup/*
+/*.zip
+/src/media/js/*.old.*
+/src/media/css/*.old.*
+/src/* copy.php
 /src/src.zip
