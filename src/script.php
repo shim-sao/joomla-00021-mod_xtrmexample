@@ -13,10 +13,10 @@ defined('_JEXEC') or die;
 
 /**
  * Script file of XtrmAddons component.
- * {{tmpl:php/phpdocs.header}}
- * @since      4.0.00.01.116.190425
  * 
  * @access     public
+ * {{tmpl:php/phpdocs.header}}
+ * @since      4.0.00.01.116.190425
  */
 class Mod_XtrmExampleInstallerScript
 {
