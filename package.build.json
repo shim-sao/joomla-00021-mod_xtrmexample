@@ -1,0 +1,80 @@
+{
+  "author": {
+    "copyright": "Copyright 2019-2021 XtrmAddons.com. All rights reserved.",
+    "email": "contact@xtrmaddons.com",
+    "license_url": "https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL",
+    "name": "shim-sao",
+    "url": "https://github.com/shim-sao/"
+  },
+  "builder": {
+    "version_min": "0.0.6",
+    "version_max": "0.0.6"
+  },
+  "download": {
+    "url_dev": "https://download.xtrmaddons.com/joomla-4/{{extension.fullname}}/dev",
+    "url_stable": "https://download.xtrmaddons.com/joomla-4/{{extension.fullname}}/stable"
+  },
+  "extension": {
+    "category": "XtrmAddons",
+    "client_id": "site",
+    "cms": "Joomla",
+    "code": "00021",
+    "description": "XtrmAddons Module Example for Joomla!.",
+    "element": "xtrmaddons",
+    "folder": "template",
+    "group": "template",
+    "name": "tpl_xtrmaddons",
+    "platform": "^(4\\.)",
+    "plugin_folder": "",
+    "title": "☆ Template XtrmAddons",
+    "type": "template"
+  },
+  "manifest": {
+    "filename": "templateDetails.xml",
+    "update": {
+      "filename_dev": "update-4.0.xml",
+      "filename_stable": "update-4.0.xml"
+    }
+  },
+  "packager": {
+    "name": "xtrmaddons.com",
+    "url": "https://www.xtrmaddons.com/",
+    "repository": "https://tpl-xtrmaddons.xtrmaddons.com"
+  },
+  "files": {
+    "assets": [
+      "css",
+      "images",
+      "js",
+      "vendor",
+      "favicon.ico",
+      "template_thumbnail.png",
+      "template_preview.png"
+    ],
+    "sources": [
+      "helpers/XtrmTemplateHelper.php",
+      "helpers/XtrmTemplateHelperColor.php",
+      "html/layouts/chromes/card.php",
+      "html/layouts/chromes/noCard.php",
+      "html/mod_custom/banner.php",
+      "html/mod_menu/collapse-metismenu.php",
+      "html/mod_menu/dropdown-metismenu_component.php",
+      "html/mod_menu/dropdown-metismenu_heading.php",
+      "html/mod_menu/dropdown-metismenu_separator.php",
+      "html/mod_menu/dropdown-metismenu_url.php",
+      "html/mod_menu/dropdown-metismenu.php",
+      "html/mod_menu/dropdown-metismenu.php",
+      "html/tinymce/index.html",
+      "language/en-GB/tpl_xtrmaddons.ini",
+      "language/en-GB/tpl_xtrmaddons.sys.ini",
+      "language/fr-FR/tpl_xtrmaddons.ini",
+      "language/fr-FR/tpl_xtrmaddons.sys.ini",
+      "component.php",
+      "error.php",
+      "index.php",
+      "joomla.asset.json",
+      "offline.php",
+      "templateDetails.xml"
+    ]
+  }
+}
