@@ -1,19 +1,95 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      // Exclude Visual Studio
+      // ".history": true,
+      ".vscode": false,
+  
+      // Exclude project backup files
+      "**/.back": true,
+      "**/.backup": true,
+  
+      // Exclude documentation
+      "docs": false,
+  
+      // Exclude master
+      // "build": true,
+      "dist": false,
+      "download": false,
+      "logs": true,
+      "out": false,
+      // "release": true,
+      // "package.build-lock-dev.json": true,
+      // "package.build-lock-stable.json": true,
+      // "package.json": true,
+  
+      // Exclude node project.
+      "**/node_modules": true,
+      ".browserslistrc": true,
+      "jsconfig.json": true,
+      // "package-lock.json": true,
+      "tsconfig.json": false,
+      "tsconfig.tsbuildinfo": true,
+  
+      // Exclude git project.
+      "**/.git": true,
+      ".gitattributes": true,
+      // ".gitignore": true,
+      "LICENSE": true,
+      "README.md": true
+    },
+    "intelephense.environment.documentRoot": ".",
+    "intelephense.environment.includePaths": [
+      "../joomla-cms"
+    ],
+		"taskExplorer.groupWithSeparator": false,
+		"taskExplorer.autoRefresh": true,
+    "taskExplorer.exclude": [
+      "**/build/**",
+      "**/src/**",
+      "**/node_modules/**",
+      "**/joomla-cms/**"
+    ],
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#253412",
+      "titleBar.activeBackground": "#0a0e05",
+      "titleBar.activeForeground": "#e7e7e7",
+      "activityBar.activeBackground": "#253412",
+      "activityBar.activeBorder": "#31658e",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#31658e",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "statusBar.background": "#0a0e05",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#253412",
+      "titleBar.inactiveBackground": "#0a0e0599",
+      "titleBar.inactiveForeground": "#e7e7e799",
+      "editorGroup.border": "#253412",
+      "panel.border": "#253412",
+      "sash.hoverBorder": "#253412",
+      "sideBar.border": "#253412",
+      "statusBarItem.remoteBackground": "#0a0e05",
+      "statusBarItem.remoteForeground": "#e7e7e7"
+    },
+    "peacock.color": "#0a0e05",
 		"cSpell.words": [
+			"browserslistrc",
+			"intelephense",
 			"JEXEC",
 			"Multilanguage",
-			"XTRMEXAMPLE",
-			"Xtrm",
 			"phpdocs",
 			"postflight",
 			"subpackage",
-			"tmpl"
+			"tmpl",
+			"tsbuildinfo",
+			"Xtrm",
+			"XTRMEXAMPLE"
 		]
 	}
 }
