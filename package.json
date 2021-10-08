@@ -15,7 +15,6 @@
     "debug": "node node_modules/joomla-extensions-builder/vendor/bin/debug.js"
   },
   "dependencies": {
-    "joomla-extensions-builder": "git+https://github.com/shim-sao/joomla-extensions-builder.git"
-  },
-  "devDependencies": {}
+    "joomla-extensions-builder": "github:shim-sao/joomla-extensions-builder"
+  }
 }
