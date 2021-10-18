@@ -2,7 +2,7 @@
   [
     "Helper/XtrmExampleHelper.php",
     {
-      "lastModified": 1634565098934.684,
+      "lastModified": 1634566300369.7097,
       "count": 27,
       "fail": 0
     }
@@ -10,33 +10,33 @@
   [
     "language/en-GB/en-GB.mod_xtrmexample.ini",
     {
-      "lastModified": 1633599740781.3281,
-      "count": 3,
-      "fail": 1
+      "lastModified": 1634566667163.4531,
+      "count": 15,
+      "fail": 0
     }
   ],
   [
     "language/en-GB/en-GB.mod_xtrmexample.sys.ini",
     {
-      "lastModified": 1633599740782.3274,
-      "count": 3,
-      "fail": 1
+      "lastModified": 1634566780659.02,
+      "count": 15,
+      "fail": 0
     }
   ],
   [
     "language/fr-FR/fr-FR.mod_xtrmexample.ini",
     {
-      "lastModified": 1633599740783.3257,
-      "count": 3,
-      "fail": 1
+      "lastModified": 1634566807582.2253,
+      "count": 15,
+      "fail": 0
     }
   ],
   [
     "language/fr-FR/fr-FR.mod_xtrmexample.sys.ini",
     {
-      "lastModified": 1634564876408.638,
-      "count": 3,
-      "fail": 1
+      "lastModified": 1634566794386.439,
+      "count": 15,
+      "fail": 0
     }
   ],
   [
