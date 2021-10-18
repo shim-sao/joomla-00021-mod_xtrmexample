@@ -8,8 +8,8 @@
   },
 
   "builder": {
-    "version_min": "0.0.6",
-    "version_max": "0.0.6"
+    "version_min": "0.0.7",
+    "version_max": "0.0.7"
   },
 
   "download": {
