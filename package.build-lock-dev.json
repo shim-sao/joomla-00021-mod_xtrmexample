@@ -1,0 +1,106 @@
+[
+  [
+    "Helper/XtrmExampleHelper.php",
+    {
+      "lastModified": 1634565098934.684,
+      "count": 27,
+      "fail": 0
+    }
+  ],
+  [
+    "language/en-GB/en-GB.mod_xtrmexample.ini",
+    {
+      "lastModified": 1633599740781.3281,
+      "count": 3,
+      "fail": 1
+    }
+  ],
+  [
+    "language/en-GB/en-GB.mod_xtrmexample.sys.ini",
+    {
+      "lastModified": 1633599740782.3274,
+      "count": 3,
+      "fail": 1
+    }
+  ],
+  [
+    "language/fr-FR/fr-FR.mod_xtrmexample.ini",
+    {
+      "lastModified": 1633599740783.3257,
+      "count": 3,
+      "fail": 1
+    }
+  ],
+  [
+    "language/fr-FR/fr-FR.mod_xtrmexample.sys.ini",
+    {
+      "lastModified": 1634564876408.638,
+      "count": 3,
+      "fail": 1
+    }
+  ],
+  [
+    "media/css/default.css",
+    {
+      "lastModified": 1634565235841.9507,
+      "count": 14,
+      "fail": 0
+    }
+  ],
+  [
+    "media/css/default.min.css",
+    {
+      "lastModified": 1634565187092.5671,
+      "count": 14,
+      "fail": 0
+    }
+  ],
+  [
+    "media/js/default.js",
+    {
+      "lastModified": 1634565268859.7202,
+      "count": 14,
+      "fail": 0
+    }
+  ],
+  [
+    "media/js/default.min.js",
+    {
+      "lastModified": 1634565275393.3215,
+      "count": 14,
+      "fail": 0
+    }
+  ],
+  [
+    "tmpl/default.php",
+    {
+      "lastModified": 1633958759248.7263,
+      "count": 14,
+      "fail": 0
+    }
+  ],
+  [
+    "mod_xtrmexample.php",
+    {
+      "lastModified": 1634565687841.5144,
+      "count": 14,
+      "fail": 0
+    }
+  ],
+  [
+    "mod_xtrmexample.xml",
+    {
+      "lastModified": 1633958917246.0935,
+      "count": 33,
+      "fail": 0
+    }
+  ],
+  [
+    "script.php",
+    {
+      "lastModified": 1634565751060.8418,
+      "count": 36,
+      "fail": 0
+    }
+  ]
+]
