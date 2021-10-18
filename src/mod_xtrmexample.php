@@ -3,8 +3,8 @@
  * mod_xtrmexample.php, build date : {{date.today}}, builder version : {{builder_version}}
  * Module Xtrm Example main file.
  * php version 7.2.10
- * {{tmpl:php/phpdocs.header}}
- * @since      4.0.00.01.116.190425
+ * {{tmpl:php/phpdocs/file.header}}
+ * @since      4.0.01.20116
  */
 
 // Check to ensure this file is included in Joomla!

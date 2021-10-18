@@ -3,20 +3,24 @@
  * script.php, build date : {{date.today}}, builder version : {{builder_version}}
  * Installation script of the Joomla Module XtrmAddons Example.
  * php version 7.2.10
- * {{tmpl:php/phpdocs.header}}
- * @since      4.0.00.01.116.190425
+ * {{tmpl:php/phpdocs/file.header}}
+ * @since      4.0.01.20116
  */
 
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die;
+
+// Declare Joomla namespaces
+use Joomla\CMS\Factory;
+use Joomla\CMS\Language\Text;
 
 
 /**
  * Script file of XtrmAddons component.
  * 
  * @access     public
- * {{tmpl:php/phpdocs.header}}
- * @since      4.0.00.01.116.190425
+ * {{tmpl:php/phpdocs/file.header}}
+ * @since      4.0.01.20116
  */
 class Mod_XtrmExampleInstallerScript
 {
@@ -27,18 +31,20 @@ class Mod_XtrmExampleInstallerScript
    *
    * @access  public
    * @version {{version.build}}
-   * @since   4.0.00.01.116.190425
+   * @since   4.0.01.20116
    *
    * @return   void
    */
   public function install($parent)
   {
-    echo '<p class="alert alert-info">'
+    echo 
+        '<p class="alert alert-info">'
       . 'Method: Install<br />'
       . 'Parent: ' . get_class($parent)
       . '</p><p class="alert alert-success">'
-      . JText::_('MOD_XTRMEXAMPLE_INSTALL_SUCCESS')
-      . '</p>';
+      . Text::_('{{EXTENSION.ELEMENT}}_INSTALL_SUCCESS')
+      . '</p>'
+      ;
   }
 
   /**
@@ -48,18 +54,20 @@ class Mod_XtrmExampleInstallerScript
    *
    * @access  public
    * @version {{version.build}}
-   * @since   4.0.00.01.116.190425
+   * @since   4.0.01.20116
    *
    * @return void
    */
   public function uninstall($parent)
   {
-    echo '<p class="alert alert-info">'
+    echo
+        '<p class="alert alert-info">'
       . 'Method: uninstall<br />'
       . 'Parent: ' . get_class($parent)
       . '</p><p class="alert alert-success">'
-      . JText::_('MOD_XTRMEXAMPLE_UNINSTALL_SUCCESS')
-      . '</p>';
+      . Text::_('{{EXTENSION.ELEMENT}}_UNINSTALL_SUCCESS')
+      . '</p>'
+      ;
   }
 
   /**
@@ -69,19 +77,21 @@ class Mod_XtrmExampleInstallerScript
    *
    * @access  public
    * @version {{version.build}}
-   * @since   4.0.00.01.116.190425
+   * @since   4.0.01.20116
    *
    * @return   void
    */
   public function update($parent)
   {
     $this->cleanUpdatesSites();
-    echo '<p class="alert alert-info">'
+    echo
+        '<p class="alert alert-info">'
       . 'Method: update<br />'
       . 'Parent: ' . get_class($parent)
       . '</p><p class="alert alert-success">'
-      . JText::_('MOD_XTRMEXAMPLE_UPDATE_SUCCESS')
-      . '</p>';
+      . Text::_('{{EXTENSION.ELEMENT}}_UPDATE_SUCCESS')
+      . '</p>'
+      ;
   }
 
   /**
@@ -92,7 +102,7 @@ class Mod_XtrmExampleInstallerScript
    *
    * @access  public
    * @version {{version.build}}
-   * @since   4.0.00.01.116.190425
+   * @since   4.0.01.20116
    *
    * @return   void
    */
@@ -183,26 +193,26 @@ class Mod_XtrmExampleInstallerScript
    *
    * @access  public
    * @version {{version.build}}
-   * @since   4.0.00.01.116.190425
+   * @since   4.0.01.20116
    *
    * @return   void
    */
   public function cleanUpdatesSites()
   {
-    $db    = JFactory::getDBO();
+    $db    = Factory::getContainer()->get('DatabaseDriver');
     $query = $db->getQuery(true);
 
     $query->select($db->q('update_site_id'))
-      ->from($db->qn('#__update_sites'))
-      ->where($db->qn('location') . ' LIKE ' . $db->q('%' . $this->element . '%'))
-      ->order('update_site_id DESC');
+    ->from($db->qn('#__update_sites'))
+    ->where($db->qn('location') . ' LIKE ' . $db->q('%' . $this->element . '%'))
+    ->order('update_site_id DESC');
 
     $id    = $db->setQuery($query)->loadResult();
     $query = $db->getQuery(true);
 
     $query->delete($db->qn('#__update_sites'))
-      ->where($db->qn('location') . ' LIKE ' . $db->q('%' . $this->element . '%'))
-      ->where($db->qn('update_site_id') . ' != ' . $db->q($id));
+    ->where($db->qn('location') . ' LIKE ' . $db->q('%' . $this->element . '%'))
+    ->where($db->qn('update_site_id') . ' != ' . $db->q($id));
 
     $db->setQuery($query)->execute();
   }
