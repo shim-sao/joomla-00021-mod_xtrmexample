@@ -16,8 +16,11 @@ use Joomla\CMS\Helper\ModuleHelper;
 // Declare Module namespaces
 use Joomla\CMS\HTML\HTMLHelper;
 
+// Add default module style.
+HTMLHelper::_('stylesheet', 'mod_xtrmexample/css/default.min.css', array('version' => 'auto', 'relative' => true));
+
 // Add default module javascript.
-HTMLHelper::_('script', 'mod_xtrmexample/default.min.js', array('version' => 'auto', 'relative' => true));
+HTMLHelper::_('script', 'mod_xtrmexample/js/default.min.js', array('version' => 'auto', 'relative' => true));
 
 // HTML ?>
 <div <?php echo $tagId ? 'id="' . $tagId . '"' : ''; ?>class="mod-xtrmexample mod-<?php echo $classSfx ? '-' . $classSfx : ''; ?>">
