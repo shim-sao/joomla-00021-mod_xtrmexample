@@ -117,6 +117,6 @@
 
 	<!-- Extension Update Specification -->
 	<updateservers>
-		<server name="XtrmAddons - {{extension.name}} Update" priority="1" type="extension">{{remote.update_url}}</server>
+		<server name="{{extension.title}} Update" priority="1" type="extension">{{package.remote.update_url}}</server>
 	</updateservers>
 </extension>
